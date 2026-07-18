@@ -115,6 +115,46 @@ const categoryNames = {
   zh: ["厨具", "日用百货", "卫浴用品", "鞋帽", "服饰配件", "家纺", "箱包", "工具", "灯具电子", "花园户外", "汽车用品", "文具运动", "美妆个护", "母婴用品", "玩具宠物", "家居装饰", "节日礼品", "旅行用品", "包装耗材", "定制产品"]
 };
 
+const productExamples = [
+  { moq: "300-1,000 pcs", lead: "7-20 days", products: ["Stainless steel cookware", "Silicone utensils", "Food storage boxes", "Cutting boards", "Kitchen organizers", "Lunch boxes"] },
+  { moq: "500-2,000 pcs", lead: "10-25 days", products: ["Storage baskets", "Cleaning brushes", "Laundry racks", "Trash bins", "Plastic hangers", "Household hooks"] },
+  { moq: "500-1,500 pcs", lead: "10-20 days", products: ["Shower caddies", "Soap dispensers", "Toilet brushes", "Bath mats", "Towel racks", "Bathroom organizers"] },
+  { moq: "120-600 pairs", lead: "15-30 days", products: ["Slippers", "Canvas shoes", "Baseball caps", "Bucket hats", "Winter beanies", "Shoe accessories"] },
+  { moq: "300-1,200 pcs", lead: "7-20 days", products: ["Earrings", "Hair clips", "Sunglasses", "Belts", "Scarves", "Keychains"] },
+  { moq: "300-1,000 pcs", lead: "15-30 days", products: ["Towels", "Blankets", "Cushion covers", "Table runners", "Bedding sets", "Curtains"] },
+  { moq: "100-500 pcs", lead: "20-35 days", products: ["Backpacks", "Cosmetic bags", "Tote bags", "Travel pouches", "Wallets", "Packing cubes"] },
+  { moq: "300-1,000 pcs", lead: "15-30 days", products: ["Hand tool sets", "Measuring tapes", "Screwdrivers", "Hardware kits", "Safety gloves", "Storage boxes"] },
+  { moq: "300-1,000 pcs", lead: "15-30 days", products: ["LED strips", "Desk lamps", "Night lights", "USB fans", "Phone chargers", "Small electronics"] },
+  { moq: "300-1,200 pcs", lead: "15-30 days", products: ["Planters", "Garden gloves", "Watering cans", "Outdoor lights", "Picnic mats", "BBQ tools"] },
+  { moq: "300-1,000 pcs", lead: "15-30 days", products: ["Car organizers", "Phone holders", "Cleaning cloths", "Seat hooks", "Air fresheners", "Sun shades"] },
+  { moq: "500-3,000 pcs", lead: "10-25 days", products: ["Notebooks", "Pens", "Desk organizers", "Sports bottles", "Yoga bands", "Fitness accessories"] },
+  { moq: "500-2,000 pcs", lead: "10-25 days", products: ["Makeup brushes", "Cosmetic mirrors", "Beauty bags", "Nail tools", "Hair combs", "Personal care tools"] },
+  { moq: "300-1,000 pcs", lead: "15-30 days", products: ["Baby bibs", "Feeding bottles", "Diaper bags", "Baby toys", "Maternity belts", "Kids tableware"] },
+  { moq: "500-2,000 pcs", lead: "10-25 days", products: ["Plush toys", "Educational toys", "Pet collars", "Pet bowls", "Pet grooming tools", "Toy sets"] },
+  { moq: "300-1,000 pcs", lead: "15-30 days", products: ["Wall decor", "Photo frames", "Candles", "Artificial flowers", "Vases", "Decor trays"] },
+  { moq: "500-2,000 pcs", lead: "20-40 days", products: ["Christmas decor", "Party supplies", "Gift boxes", "Festival lights", "Balloons", "Promotional gifts"] },
+  { moq: "300-1,000 pcs", lead: "15-30 days", products: ["Travel pillows", "Luggage tags", "Passport holders", "Toiletry bags", "Travel bottles", "Eye masks"] },
+  { moq: "1,000-5,000 pcs", lead: "10-25 days", products: ["Paper bags", "Gift boxes", "Mailer bags", "Labels", "Hang tags", "Product pouches"] },
+  { moq: "Depends on item", lead: "20-45 days", products: ["Private label items", "Logo printing", "Custom packaging", "Promotional sets", "OEM products", "Sample development"] }
+];
+
+const showcaseCopy = {
+  en: {
+    title: "Popular products in",
+    body: "Click a category to see common products we can source, compare, inspect, consolidate, and ship from Yiwu or nearby China supply hubs.",
+    moq: "Typical MOQ",
+    lead: "Sample or production lead time",
+    cta: "Ask us to source this category"
+  },
+  zh: {
+    title: "热门产品类目",
+    body: "点击类目即可查看常见可采购产品。我们可以帮你找供应商、比价、验货、集货并安排出口。",
+    moq: "常见起订量",
+    lead: "样品或生产周期",
+    cta: "咨询这个类目"
+  }
+};
+
 const categoryIconPaths = [
   `<rect class="line" x="11" y="19" width="25" height="23" rx="3"/><path class="line" d="M15 19v-7h17v7"/><path class="pink" d="M20 29c3-5 8-5 11 0-3 5-8 5-11 0Z"/><path class="spark" d="M43 14v5M40.5 16.5h5"/>`,
   `<path class="line" d="M12 40V15h25v25M16 20h17M16 26h17M16 32h9"/><path class="pink" d="M37 22h10v18H37z"/><path class="line" d="M42 15v7M39 15h6"/><path class="spark" d="M49 12v5M46.5 14.5h5"/>`,
@@ -200,6 +240,7 @@ const fallbackLangs = new Set(["es", "pt", "fr", "ja", "ru"]);
 const languageSelect = document.querySelector("#languageSelect");
 const navToggle = document.querySelector("#navToggle");
 const navLinks = document.querySelector("#navLinks");
+let activeCategoryIndex = 0;
 
 function t(lang, path) {
   return path.split(".").reduce((obj, key) => obj && obj[key], translations[lang]) || path.split(".").reduce((obj, key) => obj && obj[key], translations.en) || "";
@@ -238,12 +279,26 @@ function renderDynamic(lang) {
       const cards = row
         .map((name, index) => {
           const iconIndex = rowIndex === 0 ? index * 2 : index * 2 + 1;
-          return `<article class="category-card">${categoryIcon(iconIndex)}<h3>${name}</h3></article>`;
+          return `<button class="category-card ${iconIndex === activeCategoryIndex ? "active" : ""}" type="button" data-category-index="${iconIndex}" aria-pressed="${iconIndex === activeCategoryIndex}">${categoryIcon(iconIndex)}<h3>${name}</h3></button>`;
         })
         .join("");
       return `<div class="category-row ${rowIndex === 1 ? "reverse" : ""}">${cards}${cards}</div>`;
     })
     .join("");
+
+  document.querySelectorAll(".category-card").forEach((card) => {
+    card.addEventListener("click", () => {
+      activeCategoryIndex = Number(card.dataset.categoryIndex);
+      renderProductShowcase(languageSelect.value);
+      document.querySelectorAll(".category-card").forEach((item) => {
+        const active = Number(item.dataset.categoryIndex) === activeCategoryIndex;
+        item.classList.toggle("active", active);
+        item.setAttribute("aria-pressed", String(active));
+      });
+    });
+  });
+
+  renderProductShowcase(lang);
 
   document.querySelector("#categorySelect").innerHTML = names.map((name) => `<option>${name}</option>`).join("");
 
@@ -261,6 +316,42 @@ function renderDynamic(lang) {
   document.querySelector("#whyGrid").innerHTML = localizedSet("why", lang)
     .map(([title, body]) => `<article class="why-card"><h3>${title}</h3><p>${body}</p></article>`)
     .join("");
+}
+
+function renderProductShowcase(lang) {
+  const names = categoryNames[lang] || categoryNames.en;
+  const example = productExamples[activeCategoryIndex] || productExamples[0];
+  const copy = showcaseCopy[lang] || showcaseCopy.en;
+  const categoryName = names[activeCategoryIndex] || categoryNames.en[activeCategoryIndex];
+
+  document.querySelector("#productShowcase").innerHTML = `
+    <div class="showcase-summary">
+      <div>
+        <p class="eyebrow">${copy.title}</p>
+        <h3>${categoryName}</h3>
+        <p>${copy.body}</p>
+      </div>
+      <dl class="showcase-meta">
+        <div>
+          <dt>${copy.moq}</dt>
+          <dd>${example.moq}</dd>
+        </div>
+        <div>
+          <dt>${copy.lead}</dt>
+          <dd>${example.lead}</dd>
+        </div>
+      </dl>
+      <a class="button primary" href="#contact">${copy.cta}</a>
+    </div>
+    <div class="product-grid">
+      ${example.products
+        .map(
+          (product) =>
+            `<article class="product-card"><span class="product-chip">${categoryName}</span><h4>${product}</h4><p>Supplier search, quotation comparison, sample check, inspection, and consolidation support.</p></article>`
+        )
+        .join("")}
+    </div>
+  `;
 }
 
 navToggle.addEventListener("click", () => {
