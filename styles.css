@@ -65,6 +65,13 @@ img {
   letter-spacing: 0;
 }
 
+.brand-logo {
+  width: min(220px, 42vw);
+  height: 48px;
+  object-fit: contain;
+  object-position: left center;
+}
+
 .brand-mark {
   display: grid;
   width: 42px;
@@ -865,6 +872,14 @@ textarea {
 .footer h3,
 .footer-brand {
   color: var(--white);
+}
+
+.footer-logo {
+  width: min(260px, 70vw);
+  height: 64px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--white);
 }
 
 .whatsapp-float {
