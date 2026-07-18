@@ -1459,17 +1459,59 @@ textarea {
   border-radius: 8px;
   background: var(--white);
   box-shadow: 0 10px 30px rgba(12, 37, 35, 0.06);
+  cursor: pointer;
 }
 
 .faq-card h3 {
-  margin: 0 0 10px;
+  position: relative;
+  margin: 0;
+  padding-right: 36px;
   font-size: 20px;
   line-height: 1.25;
 }
 
+.faq-card h3::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(13, 118, 110, 0.08);
+  color: var(--brand-dark);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 220ms ease, background-color 220ms ease;
+}
+
+.faq-card.open h3::after {
+  background: rgba(13, 118, 110, 0.14);
+  transform: translateY(-50%) rotate(45deg);
+}
+
 .faq-card p {
+  max-height: 0;
   margin: 0;
+  overflow: hidden;
   color: var(--muted);
+  opacity: 0;
+  transition: max-height 320ms ease, margin-top 320ms ease, opacity 220ms ease;
+}
+
+.faq-card.open p {
+  max-height: 260px;
+  margin-top: 10px;
+  opacity: 1;
+}
+
+.faq-card:focus-visible {
+  outline: 3px solid rgba(226, 161, 58, 0.55);
+  outline-offset: 3px;
 }
 
 .footer {

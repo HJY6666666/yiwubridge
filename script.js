@@ -459,6 +459,28 @@ if (languageSelect) {
   languageSelect.addEventListener("change", (event) => setLanguage(event.target.value));
 }
 
+document.querySelectorAll(".faq-card").forEach((card) => {
+  const answer = card.querySelector("p");
+  if (!answer) return;
+
+  card.setAttribute("role", "button");
+  card.setAttribute("tabindex", "0");
+  card.setAttribute("aria-expanded", "false");
+
+  const toggleCard = () => {
+    const isOpen = card.classList.toggle("open");
+    card.setAttribute("aria-expanded", String(isOpen));
+  };
+
+  card.addEventListener("click", toggleCard);
+  card.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      toggleCard();
+    }
+  });
+});
+
 const leadForm = document.querySelector("#leadForm");
 if (leadForm) {
   leadForm.addEventListener("submit", () => {
