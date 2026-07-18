@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hjy6666666.github.io/yiwubridge/sitemap.xml
+Sitemap: https://yiwugoagent.com/sitemap.xml
