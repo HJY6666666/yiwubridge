@@ -503,58 +503,6 @@ if (revealItems.length) {
   }
 }
 
-const licenseLinks = document.querySelectorAll(".license-link");
-if (licenseLinks.length) {
-  const licenseModal = document.createElement("div");
-  licenseModal.className = "license-modal";
-  licenseModal.setAttribute("role", "dialog");
-  licenseModal.setAttribute("aria-modal", "true");
-  licenseModal.setAttribute("aria-label", "Business license certificate");
-  licenseModal.innerHTML = `
-    <div class="license-modal-panel">
-      <button class="license-close" type="button" aria-label="Close certificate">×</button>
-      <img src="" alt="Business license certificate for Nuoxi Department Store" loading="lazy" decoding="async" />
-    </div>
-  `;
-  document.body.appendChild(licenseModal);
-
-  const licenseImage = licenseModal.querySelector("img");
-  const licenseClose = licenseModal.querySelector(".license-close");
-  let lastFocusedElement = null;
-
-  const closeLicenseModal = () => {
-    licenseModal.classList.remove("open");
-    document.body.classList.remove("modal-open");
-    if (lastFocusedElement) {
-      lastFocusedElement.focus();
-    }
-  };
-
-  const openLicenseModal = (source, trigger) => {
-    lastFocusedElement = trigger;
-    licenseImage.src = source;
-    licenseModal.classList.add("open");
-    document.body.classList.add("modal-open");
-    licenseClose.focus();
-  };
-
-  licenseLinks.forEach((link) => {
-    link.addEventListener("click", () => openLicenseModal(link.dataset.certificateSrc, link));
-  });
-
-  licenseClose.addEventListener("click", closeLicenseModal);
-  licenseModal.addEventListener("click", (event) => {
-    if (event.target === licenseModal) {
-      closeLicenseModal();
-    }
-  });
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && licenseModal.classList.contains("open")) {
-      closeLicenseModal();
-    }
-  });
-}
-
 const leadForm = document.querySelector("#leadForm");
 if (leadForm) {
   leadForm.addEventListener("submit", () => {
