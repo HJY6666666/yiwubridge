@@ -280,17 +280,26 @@ function renderDynamic(lang) {
   const categoryGrid = document.querySelector("#categoryGrid");
   const hasProductShowcase = Boolean(document.querySelector("#productShowcase"));
   if (categoryGrid) {
-    categoryGrid.innerHTML = rows
-      .map((row, rowIndex) => {
-        const cards = row
-          .map((name, index) => {
-            const iconIndex = rowIndex === 0 ? index * 2 : index * 2 + 1;
-            return `<button class="category-card ${iconIndex === activeCategoryIndex ? "active" : ""}" type="button" data-category-index="${iconIndex}" aria-pressed="${iconIndex === activeCategoryIndex}">${categoryIcon(iconIndex)}<h3>${name}</h3></button>`;
-          })
-          .join("");
-        return `<div class="category-row ${rowIndex === 1 ? "reverse" : ""}">${cards}${cards}</div>`;
-      })
-      .join("");
+    if (categoryGrid.classList.contains("product-page-categories")) {
+      categoryGrid.innerHTML = names
+        .map(
+          (name, index) =>
+            `<button class="category-card ${index === activeCategoryIndex ? "active" : ""}" type="button" data-category-index="${index}" aria-pressed="${index === activeCategoryIndex}">${categoryIcon(index)}<h3>${name}</h3></button>`
+        )
+        .join("");
+    } else {
+      categoryGrid.innerHTML = rows
+        .map((row, rowIndex) => {
+          const cards = row
+            .map((name, index) => {
+              const iconIndex = rowIndex === 0 ? index * 2 : index * 2 + 1;
+              return `<button class="category-card ${iconIndex === activeCategoryIndex ? "active" : ""}" type="button" data-category-index="${iconIndex}" aria-pressed="${iconIndex === activeCategoryIndex}">${categoryIcon(iconIndex)}<h3>${name}</h3></button>`;
+            })
+            .join("");
+          return `<div class="category-row ${rowIndex === 1 ? "reverse" : ""}">${cards}${cards}</div>`;
+        })
+        .join("");
+    }
   }
 
   document.querySelectorAll(".category-card").forEach((card) => {
@@ -358,7 +367,9 @@ function renderProductShowcase(lang) {
   const categoryName = names[activeCategoryIndex] || categoryNames.en[activeCategoryIndex];
   const contactHref = document.querySelector("#contact") ? "#contact" : "./index.html#contact";
 
-  document.title = `${categoryName} Sourcing | YiwuGo Agent`;
+  if (categoryParam) {
+    document.title = `${categoryName} Sourcing | YiwuGo Agent`;
+  }
   showcase.innerHTML = `
     <div class="showcase-summary">
       <div>
