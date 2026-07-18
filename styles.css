@@ -316,13 +316,39 @@ textarea {
 }
 
 .product-page-hero {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 310px;
   align-items: end;
   gap: 28px;
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 82px 0 46px;
+  padding: 82px 0 74px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.product-page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 52px 0 0;
+  z-index: -2;
+  border-radius: 8px;
+  background-image: url("./assets/yiwu-trade-city-exterior.jpg");
+  background-position: center 43%;
+  background-size: cover;
+  opacity: 0.2;
+}
+
+.product-page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 52px 0 0;
+  z-index: -1;
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(251, 251, 247, 0.98) 0%, rgba(251, 251, 247, 0.9) 48%, rgba(251, 251, 247, 0.72) 100%),
+    linear-gradient(180deg, rgba(251, 251, 247, 0.92) 0%, rgba(251, 251, 247, 0.58) 100%);
 }
 
 .product-page-hero h1 {
@@ -367,29 +393,18 @@ textarea {
   font-weight: 800;
 }
 
-.product-hero-photo {
-  grid-column: 1 / -1;
-  overflow: hidden;
-  margin: 22px 0 0;
-  border-radius: 8px;
-  background: var(--white);
-  box-shadow: var(--shadow);
-}
-
-.product-hero-photo img {
-  width: 100%;
-  height: clamp(240px, 31vw, 390px);
-  object-fit: cover;
-  object-position: center 42%;
-}
-
-.product-hero-photo figcaption {
-  padding: 8px 12px 10px;
+.product-hero-credit {
+  position: absolute;
+  right: 14px;
+  bottom: 10px;
+  max-width: min(520px, calc(100% - 28px));
+  margin: 0;
   color: var(--muted);
   font-size: 12px;
+  text-align: right;
 }
 
-.product-hero-photo figcaption a {
+.product-hero-credit a {
   color: var(--brand-dark);
   font-weight: 800;
 }
