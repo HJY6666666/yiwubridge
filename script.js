@@ -240,7 +240,8 @@ const fallbackLangs = new Set(["es", "pt", "fr", "ja", "ru"]);
 const languageSelect = document.querySelector("#languageSelect");
 const navToggle = document.querySelector("#navToggle");
 const navLinks = document.querySelector("#navLinks");
-let activeCategoryIndex = 0;
+const categoryParam = new URLSearchParams(window.location.search).get("category");
+let activeCategoryIndex = Math.min(Math.max(Number.parseInt(categoryParam || "0", 10) || 0, 0), productExamples.length - 1);
 
 function t(lang, path) {
   return path.split(".").reduce((obj, key) => obj && obj[key], translations[lang]) || path.split(".").reduce((obj, key) => obj && obj[key], translations.en) || "";
@@ -263,7 +264,9 @@ function localizedSet(name, lang) {
 }
 
 function renderCards(containerId, rows, className) {
-  document.querySelector(containerId).innerHTML = rows
+  const container = document.querySelector(containerId);
+  if (!container) return;
+  container.innerHTML = rows
     .map((row) => `<article class="${className}"><span class="card-icon">${row[0]}</span><h3>${row[1]}</h3><p>${row[2]}</p></article>`)
     .join("");
 }
@@ -274,21 +277,29 @@ function renderDynamic(lang) {
 
   const names = categoryNames[lang] || categoryNames.en;
   const rows = [names.filter((_, index) => index % 2 === 0), names.filter((_, index) => index % 2 === 1)];
-  document.querySelector("#categoryGrid").innerHTML = rows
-    .map((row, rowIndex) => {
-      const cards = row
-        .map((name, index) => {
-          const iconIndex = rowIndex === 0 ? index * 2 : index * 2 + 1;
-          return `<button class="category-card ${iconIndex === activeCategoryIndex ? "active" : ""}" type="button" data-category-index="${iconIndex}" aria-pressed="${iconIndex === activeCategoryIndex}">${categoryIcon(iconIndex)}<h3>${name}</h3></button>`;
-        })
-        .join("");
-      return `<div class="category-row ${rowIndex === 1 ? "reverse" : ""}">${cards}${cards}</div>`;
-    })
-    .join("");
+  const categoryGrid = document.querySelector("#categoryGrid");
+  const hasProductShowcase = Boolean(document.querySelector("#productShowcase"));
+  if (categoryGrid) {
+    categoryGrid.innerHTML = rows
+      .map((row, rowIndex) => {
+        const cards = row
+          .map((name, index) => {
+            const iconIndex = rowIndex === 0 ? index * 2 : index * 2 + 1;
+            return `<button class="category-card ${iconIndex === activeCategoryIndex ? "active" : ""}" type="button" data-category-index="${iconIndex}" aria-pressed="${iconIndex === activeCategoryIndex}">${categoryIcon(iconIndex)}<h3>${name}</h3></button>`;
+          })
+          .join("");
+        return `<div class="category-row ${rowIndex === 1 ? "reverse" : ""}">${cards}${cards}</div>`;
+      })
+      .join("");
+  }
 
   document.querySelectorAll(".category-card").forEach((card) => {
     card.addEventListener("click", () => {
       activeCategoryIndex = Number(card.dataset.categoryIndex);
+      if (!hasProductShowcase) {
+        window.location.href = `./products.html?category=${activeCategoryIndex}`;
+        return;
+      }
       renderProductShowcase(languageSelect.value);
       document.querySelectorAll(".category-card").forEach((item) => {
         const active = Number(item.dataset.categoryIndex) === activeCategoryIndex;
@@ -304,33 +315,51 @@ function renderDynamic(lang) {
     });
   });
 
-  renderProductShowcase(lang);
+  if (hasProductShowcase) {
+    renderProductShowcase(lang);
+  }
 
-  document.querySelector("#categorySelect").innerHTML = names.map((name) => `<option>${name}</option>`).join("");
+  const categorySelect = document.querySelector("#categorySelect");
+  if (categorySelect) {
+    categorySelect.innerHTML = names.map((name) => `<option>${name}</option>`).join("");
+  }
 
-  document.querySelector("#valueGrid").innerHTML = localizedSet("value", lang)
-    .map(
-      ([title, body, image]) =>
-        `<article class="value-card"><div class="value-image" style="background-image:url('${image}')"></div><div><h3>${title}</h3><p>${body}</p></div></article>`
-    )
-    .join("");
+  const valueGrid = document.querySelector("#valueGrid");
+  if (valueGrid) {
+    valueGrid.innerHTML = localizedSet("value", lang)
+      .map(
+        ([title, body, image]) =>
+          `<article class="value-card"><div class="value-image" style="background-image:url('${image}')"></div><div><h3>${title}</h3><p>${body}</p></div></article>`
+      )
+      .join("");
+  }
 
-  document.querySelector("#caseList").innerHTML = localizedSet("cases", lang)
-    .map(([title, body]) => `<article class="case-card"><h3>${title}</h3><p>${body}</p></article>`)
-    .join("");
+  const caseList = document.querySelector("#caseList");
+  if (caseList) {
+    caseList.innerHTML = localizedSet("cases", lang)
+      .map(([title, body]) => `<article class="case-card"><h3>${title}</h3><p>${body}</p></article>`)
+      .join("");
+  }
 
-  document.querySelector("#whyGrid").innerHTML = localizedSet("why", lang)
-    .map(([title, body]) => `<article class="why-card"><h3>${title}</h3><p>${body}</p></article>`)
-    .join("");
+  const whyGrid = document.querySelector("#whyGrid");
+  if (whyGrid) {
+    whyGrid.innerHTML = localizedSet("why", lang)
+      .map(([title, body]) => `<article class="why-card"><h3>${title}</h3><p>${body}</p></article>`)
+      .join("");
+  }
 }
 
 function renderProductShowcase(lang) {
+  const showcase = document.querySelector("#productShowcase");
+  if (!showcase) return;
   const names = categoryNames[lang] || categoryNames.en;
   const example = productExamples[activeCategoryIndex] || productExamples[0];
   const copy = showcaseCopy[lang] || showcaseCopy.en;
   const categoryName = names[activeCategoryIndex] || categoryNames.en[activeCategoryIndex];
+  const contactHref = document.querySelector("#contact") ? "#contact" : "./index.html#contact";
 
-  document.querySelector("#productShowcase").innerHTML = `
+  document.title = `${categoryName} Sourcing | Yiwu Bridge`;
+  showcase.innerHTML = `
     <div class="showcase-summary">
       <div>
         <p class="eyebrow">${copy.title}</p>
@@ -347,7 +376,7 @@ function renderProductShowcase(lang) {
           <dd>${example.lead}</dd>
         </div>
       </dl>
-      <a class="button primary" href="#contact">${copy.cta}</a>
+      <a class="button primary" href="${contactHref}">${copy.cta}</a>
     </div>
     <div class="product-grid">
       ${example.products
@@ -360,22 +389,32 @@ function renderProductShowcase(lang) {
   `;
 }
 
-navToggle.addEventListener("click", () => {
-  const open = navLinks.classList.toggle("open");
-  navToggle.setAttribute("aria-expanded", String(open));
-});
+if (navToggle && navLinks) {
+  navToggle.addEventListener("click", () => {
+    const open = navLinks.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", String(open));
+  });
 
-navLinks.addEventListener("click", (event) => {
-  if (event.target.tagName === "A") {
-    navLinks.classList.remove("open");
-    navToggle.setAttribute("aria-expanded", "false");
-  }
-});
+  navLinks.addEventListener("click", (event) => {
+    if (event.target.tagName === "A") {
+      navLinks.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+    }
+  });
+}
 
-languageSelect.addEventListener("change", (event) => setLanguage(event.target.value));
+if (languageSelect) {
+  languageSelect.addEventListener("change", (event) => setLanguage(event.target.value));
+}
 
-document.querySelector("#leadForm").addEventListener("submit", () => {
-  document.querySelector("#formStatus").textContent = t(languageSelect.value, "form.success");
-});
+const leadForm = document.querySelector("#leadForm");
+if (leadForm) {
+  leadForm.addEventListener("submit", () => {
+    const formStatus = document.querySelector("#formStatus");
+    if (formStatus) {
+      formStatus.textContent = t(languageSelect.value, "form.success");
+    }
+  });
+}
 
 setLanguage(localStorage.getItem("yiwuBridgeLang") || "en");
