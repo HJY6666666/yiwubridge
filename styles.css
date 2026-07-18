@@ -1326,6 +1326,29 @@ textarea {
   color: var(--muted);
 }
 
+[data-reveal="fade-up"] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 620ms ease,
+    transform 620ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+[data-reveal="fade-up"].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal="fade-up"] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 .cases {
   align-items: center;
 }
