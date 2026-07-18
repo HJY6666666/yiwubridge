@@ -295,6 +295,12 @@ function renderDynamic(lang) {
         item.classList.toggle("active", active);
         item.setAttribute("aria-pressed", String(active));
       });
+      const showcase = document.querySelector("#productShowcase");
+      showcase.classList.remove("pulse");
+      window.requestAnimationFrame(() => {
+        showcase.classList.add("pulse");
+        showcase.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
     });
   });
 
