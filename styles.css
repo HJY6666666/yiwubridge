@@ -335,9 +335,9 @@ textarea {
   z-index: -2;
   border-radius: 8px;
   background-image: url("./assets/yiwu-trade-city-exterior.jpg");
-  background-position: center 43%;
+  background-position: center 38%;
   background-size: cover;
-  opacity: 0.2;
+  opacity: 0.58;
 }
 
 .product-page-hero::after {
@@ -347,8 +347,8 @@ textarea {
   z-index: -1;
   border-radius: 8px;
   background:
-    linear-gradient(90deg, rgba(251, 251, 247, 0.98) 0%, rgba(251, 251, 247, 0.9) 48%, rgba(251, 251, 247, 0.72) 100%),
-    linear-gradient(180deg, rgba(251, 251, 247, 0.92) 0%, rgba(251, 251, 247, 0.58) 100%);
+    linear-gradient(90deg, rgba(251, 251, 247, 0.82) 0%, rgba(251, 251, 247, 0.64) 48%, rgba(251, 251, 247, 0.28) 100%),
+    linear-gradient(180deg, rgba(251, 251, 247, 0.58) 0%, rgba(251, 251, 247, 0.18) 100%);
 }
 
 .product-page-hero h1 {
