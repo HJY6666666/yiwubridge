@@ -242,6 +242,7 @@ const navToggle = document.querySelector("#navToggle");
 const navLinks = document.querySelector("#navLinks");
 const categoryParam = new URLSearchParams(window.location.search).get("category");
 let activeCategoryIndex = Math.min(Math.max(Number.parseInt(categoryParam || "0", 10) || 0, 0), productExamples.length - 1);
+let heroStatsAnimated = false;
 
 function t(lang, path) {
   return path.split(".").reduce((obj, key) => obj && obj[key], translations[lang]) || path.split(".").reduce((obj, key) => obj && obj[key], translations.en) || "";
@@ -249,12 +250,52 @@ function t(lang, path) {
 
 function setLanguage(lang) {
   document.documentElement.lang = lang;
-  languageSelect.value = lang;
+  if (languageSelect) {
+    languageSelect.value = lang;
+  }
   localStorage.setItem("yiwuGoAgentLang", lang);
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     node.textContent = t(lang, node.dataset.i18n);
   });
   renderDynamic(lang);
+  animateHeroStats();
+}
+
+function animateHeroStats() {
+  if (heroStatsAnimated) return;
+  const stats = document.querySelectorAll("[data-count-up]");
+  if (!stats.length) return;
+
+  heroStatsAnimated = true;
+  const duration = 1500;
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const numberFormatter = new Intl.NumberFormat(document.documentElement.lang || "en");
+
+  stats.forEach((stat) => {
+    const target = Number.parseInt(stat.dataset.countTarget || "0", 10);
+    const suffix = stat.dataset.countSuffix || "";
+
+    if (prefersReducedMotion) {
+      stat.textContent = `${numberFormatter.format(target)}${suffix}`;
+      return;
+    }
+
+    const startTime = performance.now();
+    const tick = (now) => {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = Math.round(target * eased);
+
+      stat.textContent = `${numberFormatter.format(current)}${suffix}`;
+
+      if (progress < 1) {
+        requestAnimationFrame(tick);
+      }
+    };
+
+    stat.textContent = `0${suffix}`;
+    requestAnimationFrame(tick);
+  });
 }
 
 function localizedSet(name, lang) {
@@ -423,7 +464,7 @@ if (leadForm) {
   leadForm.addEventListener("submit", () => {
     const formStatus = document.querySelector("#formStatus");
     if (formStatus) {
-      formStatus.textContent = t(languageSelect.value, "form.success");
+      formStatus.textContent = t(languageSelect ? languageSelect.value : document.documentElement.lang, "form.success");
     }
   });
 }
