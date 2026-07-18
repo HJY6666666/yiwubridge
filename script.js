@@ -8,7 +8,7 @@ const translations = {
       cta: "Tell us your needs",
       secondary: "Explore categories"
     },
-    stats: { suppliers: "8,000+", suppliersLabel: "Verified suppliers", categories: "20+", categoriesLabel: "Daily-use categories", response: "2h", responseLabel: "Business-hour reply" },
+    stats: { suppliers: "10,000+", suppliersLabel: "Verified suppliers", categories: "50,000+", categoriesLabel: "Product options", response: "2h", responseLabel: "Business-hour reply" },
     services: { eyebrow: "Built around the Yiwu market", title: "A practical Yiwu agent between buyers and China supply", body: "YiwuGo Agent gives importers, retailers, wholesalers, and e-commerce sellers a local team that can move from product discovery to shipment without losing control of cost, quality, or timing." },
     products: { eyebrow: "Product categories", title: "Source across Yiwu's strongest categories", body: "From small commodities to private-label collections, we match your target price, quality level, packaging, and compliance requirements." },
     callout: { title: "Can't find your desired category?", body: "Send us your product photos, links, or specs. A sourcing specialist will reply with the next step.", cta: "Get sourcing help" },
@@ -22,7 +22,7 @@ const translations = {
   es: {
     nav: { services: "Servicios", sourcing: "Compras en Yiwu", supplier: "Matching proveedores", logistics: "Almacén y logística", products: "Productos", support: "Soporte", audit: "Auditoría proveedor", quality: "Control de calidad", photo: "Fotografía producto", cases: "Casos", contact: "Contacto", language: "Idioma" },
     hero: { eyebrow: "Agente de compras en Yiwu", title: "Compra millones de productos desde Yiwu y China", subtitle: "Un solo equipo para buscar proveedores, negociar precios, controlar calidad, consolidar almacén y enviar al exterior.", cta: "Cuéntanos tu necesidad", secondary: "Ver categorías" },
-    stats: { suppliers: "8.000+", suppliersLabel: "Proveedores verificados", categories: "20+", categoriesLabel: "Categorías de uso diario", response: "2 h", responseLabel: "Respuesta laboral" },
+    stats: { suppliers: "10.000+", suppliersLabel: "Proveedores verificados", categories: "50,000+", categoriesLabel: "Opciones de producto", response: "2 h", responseLabel: "Respuesta laboral" },
     services: { eyebrow: "Basado en el mercado de Yiwu", title: "Un agente práctico entre compradores y suministro chino", body: "YiwuGo Agent ofrece a importadores, minoristas, mayoristas y e-commerce un equipo local que gestiona desde la búsqueda hasta el envío." },
     products: { eyebrow: "Categorías", title: "Compra en las categorías fuertes de Yiwu", body: "Ajustamos precio objetivo, calidad, empaque y requisitos de cumplimiento para productos pequeños y marcas privadas." },
     callout: { title: "¿No encuentras tu categoría?", body: "Envíanos fotos, enlaces o especificaciones. Un especialista responderá con el siguiente paso.", cta: "Pedir ayuda" },
@@ -36,7 +36,7 @@ const translations = {
   pt: {
     nav: { services: "Serviços", sourcing: "Compras em Yiwu", supplier: "Matching fornecedor", logistics: "Armazém e logística", products: "Produtos", support: "Suporte", audit: "Auditoria fornecedor", quality: "Controle qualidade", photo: "Foto de produto", cases: "Casos", contact: "Contato", language: "Idioma" },
     hero: { eyebrow: "Agente de compras em Yiwu", title: "Compre milhões de produtos de Yiwu e da China", subtitle: "Uma equipe para fornecedores, negociação, qualidade, consolidação em armazém e envio internacional.", cta: "Conte sua necessidade", secondary: "Ver categorias" },
-    stats: { suppliers: "8.000+", suppliersLabel: "Fornecedores verificados", categories: "20+", categoriesLabel: "Categorias de uso diário", response: "2 h", responseLabel: "Resposta em horário comercial" },
+    stats: { suppliers: "10.000+", suppliersLabel: "Fornecedores verificados", categories: "50,000+", categoriesLabel: "Opções de produto", response: "2 h", responseLabel: "Resposta em horário comercial" },
     services: { eyebrow: "Criado para o mercado de Yiwu", title: "Um agente prático entre compradores e a cadeia chinesa", body: "A YiwuGo Agent dá a importadores, varejistas, atacadistas e e-commerces uma equipe local do produto ao embarque." },
     products: { eyebrow: "Categorias", title: "Compre nas categorias fortes de Yiwu", body: "Atendemos preço-alvo, nível de qualidade, embalagem e conformidade para commodities e private label." },
     callout: { title: "Não encontrou sua categoria?", body: "Envie fotos, links ou especificações. Um especialista responderá com o próximo passo.", cta: "Pedir ajuda" },
@@ -50,7 +50,7 @@ const translations = {
   fr: {
     nav: { services: "Services", sourcing: "Sourcing Yiwu", supplier: "Matching fournisseur", logistics: "Entrepot et logistique", products: "Produits", support: "Support", audit: "Audit fournisseur", quality: "Controle qualite", photo: "Photo produit", cases: "Cas", contact: "Contact", language: "Langue" },
     hero: { eyebrow: "Agent sourcing a Yiwu", title: "Sourcez des millions de produits a Yiwu et en Chine", subtitle: "Une equipe pour fournisseurs, prix, qualite, consolidation et transport international.", cta: "Partager votre besoin", secondary: "Voir les categories" },
-    stats: { suppliers: "8 000+", suppliersLabel: "Fournisseurs verifies", categories: "20+", categoriesLabel: "Categories quotidiennes", response: "2 h", responseLabel: "Reponse ouvrable" },
+    stats: { suppliers: "10 000+", suppliersLabel: "Fournisseurs verifies", categories: "50,000+", categoriesLabel: "Options produit", response: "2 h", responseLabel: "Reponse ouvrable" },
     services: { eyebrow: "Ancre dans le marche de Yiwu", title: "Un agent pratique entre acheteurs et supply chain chinoise", body: "YiwuGo Agent accompagne importateurs, distributeurs, grossistes et e-commerces avec une equipe locale du sourcing a l'expedition." },
     products: { eyebrow: "Categories", title: "Sourcez dans les categories fortes de Yiwu", body: "Nous alignons prix cible, qualite, emballage et conformite pour produits courants et marques privees." },
     callout: { title: "Votre categorie n'est pas la?", body: "Envoyez photos, liens ou specs. Un specialiste repondra avec la prochaine etape.", cta: "Demander aide" },
@@ -64,7 +64,7 @@ const translations = {
   ja: {
     nav: { services: "サービス", sourcing: "義烏仕入れ", supplier: "仕入先マッチング", logistics: "倉庫と物流", products: "商品", support: "サポート", audit: "仕入先監査", quality: "品質管理", photo: "商品撮影", cases: "事例", contact: "連絡先", language: "言語" },
     hero: { eyebrow: "義烏仕入れ代行", title: "義烏と中国から数百万点の商品を調達", subtitle: "仕入先探し、価格交渉、品質管理、倉庫集約、国際配送まで一つのチームで対応します。", cta: "要望を送る", secondary: "カテゴリを見る" },
-    stats: { suppliers: "8,000+", suppliersLabel: "確認済み仕入先", categories: "20+", categoriesLabel: "日用品カテゴリ", response: "2時間", responseLabel: "営業時間内返信" },
+    stats: { suppliers: "10,000+", suppliersLabel: "確認済み仕入先", categories: "50,000+", categoriesLabel: "調達可能商品", response: "2時間", responseLabel: "営業時間内返信" },
     services: { eyebrow: "義烏市場を中心に", title: "海外バイヤーと中国供給をつなぐ実務型エージェント", body: "YiwuGo Agentは輸入業者、小売、卸、EC事業者に、商品発見から出荷まで現地チームを提供します。" },
     products: { eyebrow: "商品カテゴリ", title: "義烏の強いカテゴリで調達", body: "目標価格、品質、包装、規制要件に合わせて商品を探します。" },
     callout: { title: "希望カテゴリがありませんか？", body: "写真、リンク、仕様を送ってください。担当者が次のステップを返信します。", cta: "相談する" },
@@ -78,7 +78,7 @@ const translations = {
   ru: {
     nav: { services: "Услуги", sourcing: "Закупки в Иу", supplier: "Подбор поставщика", logistics: "Склад и логистика", products: "Товары", support: "Поддержка", audit: "Аудит поставщика", quality: "Контроль качества", photo: "Фото товаров", cases: "Кейсы", contact: "Контакты", language: "Язык" },
     hero: { eyebrow: "Агент по закупкам в Иу", title: "Закупайте миллионы товаров из Иу и Китая", subtitle: "Одна команда для поиска поставщиков, переговоров, контроля качества, консолидации и международной доставки.", cta: "Описать запрос", secondary: "Категории" },
-    stats: { suppliers: "8 000+", suppliersLabel: "Проверенных поставщиков", categories: "20+", categoriesLabel: "Категорий товаров", response: "2 ч", responseLabel: "Ответ в рабочее время" },
+    stats: { suppliers: "10 000+", suppliersLabel: "Проверенных поставщиков", categories: "50,000+", categoriesLabel: "Вариантов товаров", response: "2 ч", responseLabel: "Ответ в рабочее время" },
     services: { eyebrow: "Вокруг рынка Иу", title: "Практичный агент между покупателями и поставками из Китая", body: "YiwuGo Agent помогает импортерам, ритейлу, оптовикам и e-commerce пройти путь от поиска товара до отгрузки." },
     products: { eyebrow: "Категории", title: "Закупки в сильных категориях Иу", body: "Подбираем товары под целевую цену, качество, упаковку и требования рынка." },
     callout: { title: "Не нашли категорию?", body: "Отправьте фото, ссылки или спецификации. Специалист ответит с дальнейшими шагами.", cta: "Получить помощь" },
@@ -92,7 +92,7 @@ const translations = {
   zh: {
     nav: { services: "服务", sourcing: "义乌采购", supplier: "供应商匹配", logistics: "仓储物流", products: "产品", support: "支持", audit: "供应商审核", quality: "质量控制", photo: "产品拍摄", cases: "案例", contact: "联系", language: "语言" },
     hero: { eyebrow: "面向全球买家的义乌采购代理", title: "从义乌和中国采购海量产品", subtitle: "一个本地团队，帮你完成找货、询价议价、验货、仓储集货和国际物流。", cta: "告诉我们你的需求", secondary: "查看产品类目" },
-    stats: { suppliers: "8,000+", suppliersLabel: "认证供应商", categories: "20+", categoriesLabel: "日用百货类目", response: "2小时", responseLabel: "工作时间响应" },
+    stats: { suppliers: "10,000+", suppliersLabel: "认证供应商", categories: "50,000+", categoriesLabel: "可采购产品", response: "2小时", responseLabel: "工作时间响应" },
     services: { eyebrow: "围绕义乌市场打造", title: "连接海外买家与中国供应链的实战采购代理", body: "YiwuGo Agent 为进口商、零售商、批发商和电商卖家提供在义乌的本地采购团队，从找品到出货都有人盯进度、控成本、守质量。" },
     products: { eyebrow: "产品类目", title: "覆盖义乌优势采购类目", body: "无论是小商品、日用百货还是自有品牌，我们都会按你的目标价、质量等级、包装和合规要求匹配供应商。" },
     callout: { title: "没有看到想采购的类目？", body: "把产品图片、链接或规格发给我们，采购专员会给你下一步建议。", cta: "获取采购帮助" },
@@ -201,8 +201,8 @@ const contentSets = {
     zh: [["紧急季节品采购", "帮助欧洲零售客户一周内筛选供应商、安排样品并确认生产。"], ["连锁零售集货", "将 12 家供应商货物整合为一票出口，统一标签和单证。"]]
   },
   why: {
-    en: [["10+ years", "Yiwu sourcing experience"], ["20+ categories", "Daily-use products"], ["50+ countries", "Buyer service coverage"], ["1-on-1", "Sourcing assistant"], ["7 languages", "Multilingual support"]],
-    zh: [["10+ 年", "义乌采购经验"], ["20+ 类", "日用百货覆盖"], ["50+ 国", "买家服务范围"], ["1 对 1", "采购专员服务"], ["7 种语言", "多语言支持"]]
+    en: [["10+ years", "Yiwu sourcing experience"], ["50,000+ products", "Daily-use sourcing options"], ["50+ countries", "Buyer service coverage"], ["1-on-1", "Sourcing assistant"], ["7 languages", "Multilingual support"]],
+    zh: [["10+ 年", "义乌采购经验"], ["50,000+ 款", "日用百货可采购产品"], ["50+ 国", "买家服务范围"], ["1 对 1", "采购专员服务"], ["7 种语言", "多语言支持"]]
   }
 };
 
@@ -230,11 +230,11 @@ contentSets.cases.fr = [["Sourcing saisonnier urgent", "Un retailer europeen a v
 contentSets.cases.ja = [["緊急季節品調達", "欧州小売業者の仕入先選定、サンプル、量産確認を一週間で支援。"], ["小売チェーン集約", "12社の商品を一つの出荷にまとめ、ラベルと輸出書類を統一。"]];
 contentSets.cases.ru = [["Срочные сезонные закупки", "Европейский ритейлер подтвердил поставщиков, образцы и производство за неделю."], ["Консолидация для сети", "Товары 12 поставщиков объединены в одну отгрузку с едиными ярлыками и документами."]];
 
-contentSets.why.es = [["10+ años", "Experiencia en Yiwu"], ["20+ categorías", "Productos diarios"], ["50+ países", "Cobertura compradores"], ["1 a 1", "Asistente de compras"], ["7 idiomas", "Soporte multilingüe"]];
-contentSets.why.pt = [["10+ anos", "Experiência em Yiwu"], ["20+ categorias", "Produtos diários"], ["50+ países", "Cobertura de compradores"], ["1 a 1", "Assistente de compras"], ["7 idiomas", "Suporte multilíngue"]];
-contentSets.why.fr = [["10+ ans", "Experience Yiwu"], ["20+ categories", "Produits quotidiens"], ["50+ pays", "Couverture acheteurs"], ["1 a 1", "Assistant sourcing"], ["7 langues", "Support multilingue"]];
-contentSets.why.ja = [["10+ 年", "義烏仕入れ経験"], ["20+ カテゴリ", "日用品を網羅"], ["50+ 国", "買い手対応範囲"], ["1対1", "調達アシスタント"], ["7言語", "多言語サポート"]];
-contentSets.why.ru = [["10+ лет", "Опыт закупок в Иу"], ["20+ категорий", "Товары ежедневного спроса"], ["50+ стран", "Покрытие покупателей"], ["1-на-1", "Ассистент по закупкам"], ["7 языков", "Мультиязычная поддержка"]];
+contentSets.why.es = [["10+ años", "Experiencia en Yiwu"], ["50,000+ productos", "Opciones de uso diario"], ["50+ países", "Cobertura compradores"], ["1 a 1", "Asistente de compras"], ["7 idiomas", "Soporte multilingüe"]];
+contentSets.why.pt = [["10+ anos", "Experiência em Yiwu"], ["50,000+ produtos", "Opções de uso diário"], ["50+ países", "Cobertura de compradores"], ["1 a 1", "Assistente de compras"], ["7 idiomas", "Suporte multilíngue"]];
+contentSets.why.fr = [["10+ ans", "Experience Yiwu"], ["50,000+ produits", "Options quotidiennes"], ["50+ pays", "Couverture acheteurs"], ["1 a 1", "Assistant sourcing"], ["7 langues", "Support multilingue"]];
+contentSets.why.ja = [["10+ 年", "義烏仕入れ経験"], ["50,000+ 商品", "日用品調達に対応"], ["50+ 国", "買い手対応範囲"], ["1対1", "調達アシスタント"], ["7言語", "多言語サポート"]];
+contentSets.why.ru = [["10+ лет", "Опыт закупок в Иу"], ["50,000+ товаров", "Ежедневные категории"], ["50+ стран", "Покрытие покупателей"], ["1-на-1", "Ассистент по закупкам"], ["7 языков", "Мультиязычная поддержка"]];
 
 const fallbackLangs = new Set(["es", "pt", "fr", "ja", "ru"]);
 const languageSelect = document.querySelector("#languageSelect");
