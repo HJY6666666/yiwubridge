@@ -838,6 +838,8 @@ textarea {
 }
 
 .blog-list {
+  display: grid;
+  gap: 24px;
   padding-top: 42px;
 }
 
