@@ -308,6 +308,42 @@ textarea {
   padding: 92px 0;
 }
 
+.product-page-hero {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 28px;
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 82px 0 34px;
+}
+
+.product-page-hero h1 {
+  max-width: 760px;
+  margin: 0;
+  font-size: clamp(38px, 5vw, 66px);
+  line-height: 1.05;
+}
+
+.product-page-hero p:not(.eyebrow) {
+  max-width: 720px;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.product-library {
+  padding-top: 34px;
+}
+
+.product-page-categories {
+  margin-bottom: 8px;
+}
+
+.product-page-showcase {
+  margin-top: 30px;
+}
+
 .muted {
   width: 100%;
   padding-inline: max(16px, calc((100% - 1180px) / 2));
@@ -940,8 +976,15 @@ textarea {
   .comparison,
   .contact-section,
   .cases,
+  .product-page-hero,
   .footer {
     grid-template-columns: 1fr;
+  }
+
+  .product-page-hero {
+    display: grid;
+    align-items: start;
+    padding-top: 54px;
   }
 
   .value-grid,
@@ -962,6 +1005,10 @@ textarea {
 
   .hero h1 {
     font-size: 42px;
+  }
+
+  .product-page-hero h1 {
+    font-size: 38px;
   }
 
   .hero-stats,
