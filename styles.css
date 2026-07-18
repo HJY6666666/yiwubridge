@@ -435,6 +435,39 @@ textarea {
   padding-top: 44px;
 }
 
+.answer-summary {
+  padding-top: 52px;
+}
+
+.answer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.answer-grid article {
+  padding: 20px;
+  border: 1px solid rgba(20, 35, 34, 0.1);
+  border-radius: 8px;
+  background: #fffdf8;
+  box-shadow: 0 8px 24px rgba(12, 37, 35, 0.05);
+}
+
+.answer-grid h3,
+.answer-grid p {
+  margin: 0;
+}
+
+.answer-grid h3 {
+  margin-bottom: 8px;
+  color: var(--brand-dark);
+  font-size: 18px;
+}
+
+.answer-grid p {
+  color: var(--muted);
+}
+
 .directory-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -577,6 +610,10 @@ textarea {
   max-width: 700px;
   color: var(--muted);
   font-size: 18px;
+}
+
+.geo-faq {
+  padding-top: 44px;
 }
 
 .muted {
@@ -1234,6 +1271,7 @@ textarea {
   .value-grid,
   .why-grid,
   .faq-grid,
+  .answer-grid,
   .product-page-categories,
   .directory-grid,
   .solution-grid,
@@ -1265,6 +1303,7 @@ textarea {
   .value-grid,
   .why-grid,
   .faq-grid,
+  .answer-grid,
   .product-page-categories,
   .directory-grid,
   .solution-grid,

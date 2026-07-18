@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://yiwugoagent.com/sitemap.xml
+Host: https://yiwugoagent.com/
