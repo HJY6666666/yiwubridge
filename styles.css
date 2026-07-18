@@ -612,6 +612,17 @@ textarea {
   font-size: 18px;
 }
 
+.product-final-cta .button.secondary {
+  border-color: rgba(13, 118, 110, 0.28);
+  background: rgba(13, 118, 110, 0.08);
+  color: var(--brand-dark);
+}
+
+.product-final-cta .button.secondary:hover {
+  border-color: rgba(13, 118, 110, 0.48);
+  background: rgba(13, 118, 110, 0.14);
+}
+
 .geo-faq {
   padding-top: 44px;
 }
