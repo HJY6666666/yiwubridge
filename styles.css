@@ -367,6 +367,33 @@ textarea {
   font-weight: 800;
 }
 
+.product-hero-photo {
+  grid-column: 1 / -1;
+  overflow: hidden;
+  margin: 22px 0 0;
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.product-hero-photo img {
+  width: 100%;
+  height: clamp(240px, 31vw, 390px);
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.product-hero-photo figcaption {
+  padding: 8px 12px 10px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.product-hero-photo figcaption a {
+  color: var(--brand-dark);
+  font-weight: 800;
+}
+
 .product-library {
   padding-top: 34px;
 }
