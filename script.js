@@ -16,8 +16,8 @@ const translations = {
     value: { eyebrow: "Value-added support", title: "Services that reduce hidden supply-chain costs" },
     cases: { eyebrow: "Buyer stories", title: "Trusted by importers building repeat China supply", body: "We help new buyers start carefully and experienced buyers regain visibility across price, production, packaging, and shipment." },
     contact: { eyebrow: "Start sourcing", title: "Tell YiwuGo Agent what you need", body: "Share your product category, target market, budget, and timeline. We will prepare a practical sourcing plan.", point1: "Supplier search and quotation comparison", point2: "Sample, inspection, and warehouse consolidation", point3: "English, Spanish, Portuguese, French, Japanese, Russian, and Chinese support" },
-    form: { name: "Full name", email: "Email", whatsapp: "WhatsApp", country: "Country", category: "Interested categories", budget: "Purchase budget", message: "Inquiry details", submit: "Submit inquiry", success: "Thanks. Your inquiry has been sent to YiwuGo Agent." },
-    footer: { body: "Yiwu sourcing, supplier management, inspection, consolidation, and export support for global buyers.", office: "Yiwu Office", address: "No. 2, Building 22, Xingzhong Community, Chouzhou North Road, Choucheng Street, Yiwu City, Jinhua City, Zhejiang Province, China", languages: "Languages" }
+    form: { name: "Full name", email: "Email", whatsapp: "WhatsApp", country: "Country", category: "Interested categories", budget: "Purchase budget", links: "Product links or reference URLs", files: "Upload product photos or specs", message: "Inquiry details", submit: "Submit inquiry", success: "Thanks. Your inquiry has been sent to YiwuGo Agent." },
+    footer: { body: "Yiwu sourcing, supplier management, inspection, consolidation, and export support for global buyers.", office: "Yiwu Office", address: "No. 2, Building 22, Xingzhong Community, Chouzhou North Road, Choucheng Street, Yiwu City, Jinhua City, Zhejiang Province, China", languages: "Support Languages" }
   },
   es: {
     nav: { services: "Servicios", sourcing: "Compras en Yiwu", supplier: "Matching proveedores", logistics: "Almacén y logística", products: "Productos", support: "Soporte", audit: "Auditoría proveedor", quality: "Control de calidad", photo: "Fotografía producto", blog: "Blog", cases: "Casos", contact: "Contacto", language: "Idioma" },
@@ -30,8 +30,8 @@ const translations = {
     value: { eyebrow: "Soporte adicional", title: "Servicios que reducen costes ocultos" },
     cases: { eyebrow: "Historias de compradores", title: "Confianza para importadores con compras recurrentes", body: "Ayudamos a nuevos compradores a empezar con cuidado y a compradores expertos a recuperar visibilidad." },
     contact: { eyebrow: "Empieza a comprar", title: "Cuéntale a YiwuGo Agent qué necesitas", body: "Comparte categoría, mercado, presupuesto y fecha. Prepararemos un plan práctico.", point1: "Búsqueda de proveedores y comparación de cotizaciones", point2: "Muestras, inspección y consolidación", point3: "Soporte en EN, ES, PT, FR, JA, RU y chino" },
-    form: { name: "Nombre completo", email: "Email", whatsapp: "WhatsApp", country: "País", category: "Categorías de interés", budget: "Presupuesto", message: "Detalles", submit: "Enviar consulta", success: "Gracias. Tu consulta está lista para seguimiento." },
-    footer: { body: "Compras en Yiwu, gestión de proveedores, inspección, consolidación y exportación.", office: "Oficina en Yiwu", address: "No. 2, Building 22, Xingzhong Community, Chouzhou North Road, Choucheng Street, Yiwu City, Jinhua City, Zhejiang Province, China", languages: "Idiomas" }
+    form: { name: "Nombre completo", email: "Email", whatsapp: "WhatsApp", country: "País", category: "Categorías de interés", budget: "Presupuesto", links: "Enlaces de producto o referencias", files: "Subir fotos o especificaciones", message: "Detalles", submit: "Enviar consulta", success: "Gracias. Tu consulta está lista para seguimiento." },
+    footer: { body: "Compras en Yiwu, gestión de proveedores, inspección, consolidación y exportación.", office: "Oficina en Yiwu", address: "No. 2, Building 22, Xingzhong Community, Chouzhou North Road, Choucheng Street, Yiwu City, Jinhua City, Zhejiang Province, China", languages: "Idiomas de soporte" }
   },
   pt: {
     nav: { services: "Serviços", sourcing: "Compras em Yiwu", supplier: "Matching fornecedor", logistics: "Armazém e logística", products: "Produtos", support: "Suporte", audit: "Auditoria fornecedor", quality: "Controle qualidade", photo: "Foto de produto", blog: "Blog", cases: "Casos", contact: "Contato", language: "Idioma" },
@@ -44,8 +44,8 @@ const translations = {
     value: { eyebrow: "Suporte adicional", title: "Serviços que reduzem custos ocultos" },
     cases: { eyebrow: "Histórias de compradores", title: "Confiança para importadores com compras recorrentes", body: "Ajudamos novos compradores a começar com cuidado e compradores experientes a ter mais visibilidade." },
     contact: { eyebrow: "Comece a comprar", title: "Conte à YiwuGo Agent o que você precisa", body: "Compartilhe categoria, mercado, orçamento e prazo. Prepararemos um plano prático.", point1: "Busca de fornecedores e comparação de preços", point2: "Amostras, inspeção e consolidação", point3: "Suporte em EN, ES, PT, FR, JA, RU e chinês" },
-    form: { name: "Nome completo", email: "Email", whatsapp: "WhatsApp", country: "País", category: "Categorias de interesse", budget: "Orçamento", message: "Detalhes", submit: "Enviar consulta", success: "Obrigado. Sua consulta está pronta para acompanhamento." },
-    footer: { body: "Compras em Yiwu, fornecedores, inspeção, consolidação e exportação.", office: "Escritório em Yiwu", address: "No. 2, Building 22, Xingzhong Community, Chouzhou North Road, Choucheng Street, Yiwu City, Jinhua City, Zhejiang Province, China", languages: "Idiomas" }
+    form: { name: "Nome completo", email: "Email", whatsapp: "WhatsApp", country: "País", category: "Categorias de interesse", budget: "Orçamento", links: "Links do produto ou referencias", files: "Enviar fotos ou especificacoes", message: "Detalhes", submit: "Enviar consulta", success: "Obrigado. Sua consulta está pronta para acompanhamento." },
+    footer: { body: "Compras em Yiwu, fornecedores, inspeção, consolidação e exportação.", office: "Escritório em Yiwu", address: "No. 2, Building 22, Xingzhong Community, Chouzhou North Road, Choucheng Street, Yiwu City, Jinhua City, Zhejiang Province, China", languages: "Idiomas de suporte" }
   },
   fr: {
     nav: { services: "Services", sourcing: "Sourcing Yiwu", supplier: "Matching fournisseur", logistics: "Entrepot et logistique", products: "Produits", support: "Support", audit: "Audit fournisseur", quality: "Controle qualite", photo: "Photo produit", blog: "Blog", cases: "Cas", contact: "Contact", language: "Langue" },
@@ -58,8 +58,8 @@ const translations = {
     value: { eyebrow: "Support additionnel", title: "Services qui reduisent les couts caches" },
     cases: { eyebrow: "Histoires acheteurs", title: "Un partenaire pour importateurs reguliers", body: "Nous aidons les nouveaux acheteurs a commencer prudemment et les plus experimentes a retrouver de la visibilite." },
     contact: { eyebrow: "Demarrer", title: "Dites a YiwuGo Agent ce qu'il vous faut", body: "Partagez categorie, marche, budget et delai. Nous preparons un plan pratique.", point1: "Recherche fournisseurs et comparaison devis", point2: "Echantillons, inspection et consolidation", point3: "Support EN, ES, PT, FR, JA, RU et chinois" },
-    form: { name: "Nom complet", email: "Email", whatsapp: "WhatsApp", country: "Pays", category: "Categories visees", budget: "Budget", message: "Details", submit: "Envoyer", success: "Merci. Votre demande est prete pour suivi." },
-    footer: { body: "Sourcing Yiwu, gestion fournisseurs, inspection, consolidation et export.", office: "Bureau Yiwu", address: "No. 2, Building 22, Xingzhong Community, Chouzhou North Road, Choucheng Street, Yiwu City, Jinhua City, Zhejiang Province, China", languages: "Langues" }
+    form: { name: "Nom complet", email: "Email", whatsapp: "WhatsApp", country: "Pays", category: "Categories visees", budget: "Budget", links: "Liens produit ou references", files: "Importer photos ou specifications", message: "Details", submit: "Envoyer", success: "Merci. Votre demande est prete pour suivi." },
+    footer: { body: "Sourcing Yiwu, gestion fournisseurs, inspection, consolidation et export.", office: "Bureau Yiwu", address: "No. 2, Building 22, Xingzhong Community, Chouzhou North Road, Choucheng Street, Yiwu City, Jinhua City, Zhejiang Province, China", languages: "Langues de support" }
   },
   ja: {
     nav: { services: "サービス", sourcing: "義烏仕入れ", supplier: "仕入先マッチング", logistics: "倉庫と物流", products: "商品", support: "サポート", audit: "仕入先監査", quality: "品質管理", photo: "商品撮影", blog: "ブログ", cases: "事例", contact: "連絡先", language: "言語" },
@@ -72,7 +72,7 @@ const translations = {
     value: { eyebrow: "付加サービス", title: "隠れたコストを抑えるサポート" },
     cases: { eyebrow: "バイヤー事例", title: "継続的な中国仕入れを支えるパートナー", body: "初めての買い付けも、既存サプライチェーンの見直しもサポートします。" },
     contact: { eyebrow: "仕入れ開始", title: "YiwuGo Agentにご要望をお知らせください", body: "カテゴリ、市場、予算、希望時期を共有してください。実務的な調達案を作成します。", point1: "仕入先検索と見積比較", point2: "サンプル、検品、倉庫集約", point3: "EN / ES / PT / FR / JA / RU / 中文対応" },
-    form: { name: "氏名", email: "メール", whatsapp: "WhatsApp", country: "国", category: "希望カテゴリ", budget: "予算", message: "詳細", submit: "送信", success: "ありがとうございます。お問い合わせ内容を確認します。" },
+    form: { name: "氏名", email: "メール", whatsapp: "WhatsApp", country: "国", category: "希望カテゴリ", budget: "予算", links: "商品リンクまたは参考URL", files: "商品写真または仕様書をアップロード", message: "詳細", submit: "送信", success: "ありがとうございます。お問い合わせ内容を確認します。" },
     footer: { body: "義烏仕入れ、仕入先管理、検品、集約、輸出サポート。", office: "義烏オフィス", address: "No. 2, Building 22, Xingzhong Community, Chouzhou North Road, Choucheng Street, Yiwu City, Jinhua City, Zhejiang Province, China", languages: "対応言語" }
   },
   ru: {
@@ -86,8 +86,8 @@ const translations = {
     value: { eyebrow: "Дополнительная поддержка", title: "Услуги, снижающие скрытые расходы" },
     cases: { eyebrow: "Истории покупателей", title: "Надежный партнер для регулярных закупок", body: "Помогаем новым покупателям начать аккуратно, а опытным вернуть прозрачность цепочки поставок." },
     contact: { eyebrow: "Начать закупку", title: "Расскажите YiwuGo Agent, что вам нужно", body: "Укажите категорию, рынок, бюджет и сроки. Мы подготовим практичный план.", point1: "Поиск поставщиков и сравнение цен", point2: "Образцы, инспекция и консолидация", point3: "Поддержка на EN, ES, PT, FR, JA, RU и китайском" },
-    form: { name: "Полное имя", email: "Email", whatsapp: "WhatsApp", country: "Страна", category: "Категории", budget: "Бюджет", message: "Детали", submit: "Отправить", success: "Спасибо. Запрос готов к обработке." },
-    footer: { body: "Закупки в Иу, управление поставщиками, инспекция, консолидация и экспорт.", office: "Офис в Иу", address: "No. 2, Building 22, Xingzhong Community, Chouzhou North Road, Choucheng Street, Yiwu City, Jinhua City, Zhejiang Province, China", languages: "Языки" }
+    form: { name: "Полное имя", email: "Email", whatsapp: "WhatsApp", country: "Страна", category: "Категории", budget: "Бюджет", links: "Ссылки на товар или примеры", files: "Загрузить фото или спецификации", message: "Детали", submit: "Отправить", success: "Спасибо. Запрос готов к обработке." },
+    footer: { body: "Закупки в Иу, управление поставщиками, инспекция, консолидация и экспорт.", office: "Офис в Иу", address: "No. 2, Building 22, Xingzhong Community, Chouzhou North Road, Choucheng Street, Yiwu City, Jinhua City, Zhejiang Province, China", languages: "Языки поддержки" }
   },
   zh: {
     nav: { services: "服务", sourcing: "义乌采购", supplier: "供应商匹配", logistics: "仓储物流", products: "产品", support: "支持", audit: "供应商审核", quality: "质量控制", photo: "产品拍摄", blog: "博客", cases: "案例", contact: "联系", language: "语言" },
@@ -100,7 +100,7 @@ const translations = {
     value: { eyebrow: "增值支持", title: "帮你降低隐藏供应链成本" },
     cases: { eyebrow: "买家案例", title: "被长期从中国采购的进口商信任", body: "我们帮助新买家稳妥起步，也帮助成熟买家重新掌握价格、生产、包装和出货的透明度。" },
     contact: { eyebrow: "开始采购", title: "告诉 YiwuGo Agent 你想采购什么", body: "提交产品类目、目标市场、预算和时间计划，我们会整理一份可执行的采购方案。", point1: "供应商搜索与报价对比", point2: "样品、验货与仓储集货", point3: "英语、西语、葡语、法语、日语、俄语和中文支持" },
-    form: { name: "姓名", email: "邮箱", whatsapp: "WhatsApp", country: "国家/地区", category: "感兴趣类目", budget: "采购预算", message: "询盘详情", submit: "提交询盘", success: "已生成询盘草稿，YiwuGo Agent 可据此跟进。" },
+    form: { name: "姓名", email: "邮箱", whatsapp: "WhatsApp", country: "国家/地区", category: "感兴趣类目", budget: "采购预算", links: "产品链接或参考网址", files: "上传产品图片或规格文件", message: "询盘详情", submit: "提交询盘", success: "已生成询盘草稿，YiwuGo Agent 可据此跟进。" },
     footer: { body: "为全球买家提供义乌采购、供应商管理、验货、集货和出口支持。", office: "义乌办公室", address: "中国浙江省金华市义乌市稠城街道稠州北路兴中小区22幢2号", languages: "支持语言" }
   }
 };

@@ -54,6 +54,8 @@ YiwuGo Agent can help source kitchenware, household goods, bathroom products, sh
 
 Buyers should send product photos, links, specifications, target price, quantity, destination country, packaging needs, and deadline. YiwuGo Agent will review the request and prepare the next sourcing step.
 
+The website contact form accepts buyer name, email, WhatsApp, country, product category, purchase budget, product reference links, inquiry details, and product photo or specification file uploads.
+
 ## Cooperation Flow
 
 Buyers send product links, images, or specifications from Yiwugo, 1688, Alibaba, or their target market. YiwuGo Agent checks the offline market and quotes within 24 hours where possible, then helps with samples, quality control, consolidation, shipping, and customs coordination.

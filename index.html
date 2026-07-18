@@ -179,9 +179,9 @@
           <details class="nav-menu">
             <summary data-i18n="nav.services">Services</summary>
             <div class="nav-panel">
-              <a href="#services" data-i18n="nav.sourcing">Yiwu sourcing</a>
-              <a href="#services" data-i18n="nav.supplier">Supplier matching</a>
-              <a href="#support" data-i18n="nav.logistics">Warehouse and logistics</a>
+              <a href="./products.html#yiwu-market-guide" data-i18n="nav.sourcing">Yiwu sourcing</a>
+              <a href="./supplier-audit.html" data-i18n="nav.supplier">Supplier matching</a>
+              <a href="#how-it-works" data-i18n="nav.logistics">Warehouse and logistics</a>
             </div>
           </details>
           <a href="./products.html" data-i18n="nav.products">Products</a>
@@ -349,7 +349,7 @@
             <li data-i18n="contact.point3">English, Spanish, Portuguese, French, Japanese, Russian, and Chinese support</li>
           </ul>
         </div>
-        <form class="lead-form" id="leadForm" action="https://formspree.io/f/xaqrevpv" method="POST">
+        <form class="lead-form" id="leadForm" action="https://formspree.io/f/xaqrevpv" method="POST" enctype="multipart/form-data">
           <input type="hidden" name="_subject" value="New YiwuGo Agent sourcing inquiry" />
           <input type="hidden" name="_next" value="https://yiwugoagent.com/thank-you.html" />
           <input type="text" name="_gotcha" class="hidden-field" tabindex="-1" autocomplete="off" />
@@ -386,6 +386,14 @@
               <option value="$10,000 - $50,000">$10,000 - $50,000</option>
               <option value="$50,000+">$50,000+</option>
             </select>
+          </label>
+          <label>
+            <span data-i18n="form.links">Product links or reference URLs</span>
+            <input name="Product links or reference URLs" type="url" placeholder="Yiwugo / 1688 / Alibaba / Amazon link" />
+          </label>
+          <label>
+            <span data-i18n="form.files">Upload product photos or specs</span>
+            <input name="Product photos or specs" type="file" accept="image/*,.pdf,.doc,.docx,.xls,.xlsx" multiple />
           </label>
           <label>
             <span data-i18n="form.message">Inquiry details</span>
@@ -502,7 +510,7 @@
         <p data-i18n="footer.address">No. 2, Building 22, Xingzhong Community, Chouzhou North Road, Choucheng Street, Yiwu City, Jinhua City, Zhejiang Province, China</p>
       </div>
       <div>
-        <h3 data-i18n="footer.languages">Languages</h3>
+        <h3 data-i18n="footer.languages">Support Languages</h3>
         <p>EN / ES / PT / FR / JA / RU / 中文</p>
       </div>
     </footer>
