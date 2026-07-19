@@ -515,10 +515,12 @@ function trackAdEvent(eventName, eventParams = {}) {
 
 if (leadForm) {
   leadForm.addEventListener("submit", () => {
-    trackAdEvent("generate_lead", {
+    const leadEventParams = {
       event_label: "contact_form",
       form_id: "leadForm"
-    });
+    };
+    trackAdEvent("generate_lead", leadEventParams);
+    trackAdEvent("qualify_lead", leadEventParams);
     const formStatus = document.querySelector("#formStatus");
     if (formStatus) {
       formStatus.textContent = t(languageSelect ? languageSelect.value : document.documentElement.lang, "form.success");
@@ -528,10 +530,12 @@ if (leadForm) {
 
 document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"]').forEach((link) => {
   link.addEventListener("click", () => {
-    trackAdEvent("whatsapp_click", {
+    const whatsappEventParams = {
       event_label: link.classList.contains("whatsapp-float") ? "floating_whatsapp" : "whatsapp_link",
       link_url: link.href
-    });
+    };
+    trackAdEvent("whatsapp_click", whatsappEventParams);
+    trackAdEvent("close_convert_lead", whatsappEventParams);
   });
 });
 
