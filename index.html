@@ -638,6 +638,41 @@
       <span>WhatsApp</span>
     </a>
 
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const sendLeadEvent = (eventName, eventParams) => {
+          if (typeof window.gtag !== "function") return;
+          window.gtag("event", eventName, {
+            event_category: "lead",
+            transport_type: "beacon",
+            ...eventParams
+          });
+        };
+
+        const leadForm = document.querySelector("#leadForm");
+        if (leadForm) {
+          leadForm.addEventListener("submit", () => {
+            const leadParams = {
+              event_label: "contact_form",
+              form_id: "leadForm"
+            };
+            sendLeadEvent("generate_lead", leadParams);
+            sendLeadEvent("qualify_lead", leadParams);
+          });
+        }
+
+        document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"]').forEach((link) => {
+          link.addEventListener("click", () => {
+            const whatsappParams = {
+              event_label: link.classList.contains("whatsapp-float") ? "floating_whatsapp" : "whatsapp_link",
+              link_url: link.href
+            };
+            sendLeadEvent("whatsapp_click", whatsappParams);
+            sendLeadEvent("close_convert_lead", whatsappParams);
+          });
+        });
+      });
+    </script>
     <script src="./script.js" defer></script>
   </body>
 </html>
