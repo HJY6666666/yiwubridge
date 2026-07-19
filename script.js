@@ -504,13 +504,35 @@ if (revealItems.length) {
 }
 
 const leadForm = document.querySelector("#leadForm");
+function trackAdEvent(eventName, eventParams = {}) {
+  if (typeof window.gtag !== "function") return;
+  window.gtag("event", eventName, {
+    event_category: "lead",
+    transport_type: "beacon",
+    ...eventParams
+  });
+}
+
 if (leadForm) {
   leadForm.addEventListener("submit", () => {
+    trackAdEvent("generate_lead", {
+      event_label: "contact_form",
+      form_id: "leadForm"
+    });
     const formStatus = document.querySelector("#formStatus");
     if (formStatus) {
       formStatus.textContent = t(languageSelect ? languageSelect.value : document.documentElement.lang, "form.success");
     }
   });
 }
+
+document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    trackAdEvent("whatsapp_click", {
+      event_label: link.classList.contains("whatsapp-float") ? "floating_whatsapp" : "whatsapp_link",
+      link_url: link.href
+    });
+  });
+});
 
 setLanguage(localStorage.getItem("yiwuGoAgentLang") || "en");
