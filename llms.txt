@@ -8,6 +8,7 @@ Supplier audit page: https://yiwugoagent.com/supplier-audit.html
 Quality control page: https://yiwugoagent.com/quality-control.html
 Product photography page: https://yiwugoagent.com/product-photography.html
 Blog page: https://yiwugoagent.com/blog/
+RSS feed: https://yiwugoagent.com/feed.xml
 Warehouse consolidation shipping guide: https://yiwugoagent.com/blog/cut-china-shipping-costs-warehouse-consolidation.html
 Yiwu sourcing agent fee guide: https://yiwugoagent.com/blog/yiwu-sourcing-agent-fees-avoid-hidden-scams.html
 Small ecommerce sourcing guide: https://yiwugoagent.com/blog/why-small-ecommerce-sellers-need-yiwu-sourcing-agent-2026.html

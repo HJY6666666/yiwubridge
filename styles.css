@@ -852,7 +852,8 @@ textarea {
   box-shadow: 0 12px 34px rgba(12, 37, 35, 0.07);
 }
 
-.blog-card h2 {
+.blog-card h2,
+.blog-card h3 {
   margin: 0 0 12px;
   font-size: clamp(28px, 4vw, 44px);
   line-height: 1.08;
