@@ -1446,6 +1446,42 @@ textarea {
   line-height: 1.55;
 }
 
+.rfq-attachment {
+  display: grid;
+  gap: 14px;
+  margin: 0 0 14px;
+  padding: 16px;
+  border: 1px solid rgba(13, 118, 110, 0.22);
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(13, 118, 110, 0.08), rgba(226, 161, 58, 0.12));
+}
+
+.rfq-attachment strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--ink);
+  font-size: 15px;
+}
+
+.rfq-attachment p {
+  margin: 0;
+  color: #55706d;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.rfq-attachment span {
+  color: var(--brand-dark);
+  font-weight: 800;
+}
+
+.attachment-button {
+  width: fit-content;
+  border-color: rgba(13, 118, 110, 0.32);
+  background: var(--white);
+  color: var(--brand-dark);
+}
+
 .form-button {
   width: 100%;
   margin-top: 6px;
@@ -1478,6 +1514,40 @@ textarea {
 
 .why-card p {
   color: rgba(255, 255, 255, 0.74);
+}
+
+.answer-summary {
+  padding-top: 76px;
+}
+
+.ai-answer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.ai-answer-grid article {
+  padding: 22px;
+  border: 1px solid rgba(20, 35, 34, 0.1);
+  border-radius: 8px;
+  background: #fffdf8;
+  box-shadow: 0 10px 30px rgba(12, 37, 35, 0.05);
+}
+
+.ai-answer-grid h3,
+.ai-answer-grid p {
+  margin: 0;
+}
+
+.ai-answer-grid h3 {
+  margin-bottom: 8px;
+  color: var(--brand-dark);
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.ai-answer-grid p {
+  color: var(--muted);
 }
 
 .seo-section {
@@ -1729,6 +1799,7 @@ textarea {
   .why-grid,
   .faq-grid,
   .answer-grid,
+  .ai-answer-grid,
   .standard-grid,
   .step-grid,
   .process-grid,
@@ -1765,6 +1836,7 @@ textarea {
   .why-grid,
   .faq-grid,
   .answer-grid,
+  .ai-answer-grid,
   .standard-grid,
   .step-grid,
   .process-grid,
