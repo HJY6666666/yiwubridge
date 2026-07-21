@@ -1093,6 +1093,65 @@ textarea {
   font-weight: 800;
 }
 
+.article-figure {
+  margin: 24px 0 6px;
+  overflow: hidden;
+  border: 1px solid rgba(20, 35, 34, 0.1);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 12px 34px rgba(12, 37, 35, 0.07);
+}
+
+.article-figure img {
+  width: 100%;
+  aspect-ratio: 16 / 8;
+  object-fit: cover;
+}
+
+.article-figure figcaption {
+  padding: 12px 16px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.article-table-wrap {
+  margin-top: 18px;
+  overflow-x: auto;
+  border: 1px solid rgba(20, 35, 34, 0.1);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.article-table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+}
+
+.article-table th,
+.article-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(20, 35, 34, 0.1);
+  text-align: left;
+  vertical-align: top;
+}
+
+.article-table th {
+  background: rgba(13, 118, 110, 0.08);
+  color: var(--brand-dark);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.article-table td {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.article-table tr:last-child td {
+  border-bottom: 0;
+}
+
 .article-page section {
   padding: 22px 0;
   border-top: 1px solid rgba(20, 35, 34, 0.1);
