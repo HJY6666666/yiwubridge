@@ -917,21 +917,22 @@ textarea {
 
 .blog-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
+  grid-template-columns: 1fr;
   gap: 24px;
   align-items: start;
 }
 
 .blog-list {
   display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
 .blog-card {
   display: grid;
-  grid-template-columns: 76px minmax(0, 1fr);
-  gap: 20px;
-  padding: 24px;
+  gap: 16px;
+  align-content: start;
+  padding: 22px;
   border: 1px solid rgba(20, 35, 34, 0.1);
   border-radius: 8px;
   background: var(--white);
@@ -939,10 +940,11 @@ textarea {
 }
 
 .blog-date {
-  display: grid;
+  display: inline-grid;
   place-items: center;
   align-self: start;
-  min-height: 76px;
+  width: 62px;
+  min-height: 62px;
   border-radius: 8px;
   background: var(--brand-dark);
   color: var(--white);
@@ -952,7 +954,7 @@ textarea {
 
 .blog-date span {
   display: block;
-  font-size: 28px;
+  font-size: 23px;
   line-height: 1;
 }
 
@@ -967,13 +969,14 @@ textarea {
 .blog-card h2,
 .blog-card h3 {
   margin: 0 0 10px;
-  font-size: clamp(24px, 3vw, 34px);
+  font-size: clamp(20px, 2vw, 26px);
   line-height: 1.12;
 }
 
 .blog-card p:not(.eyebrow) {
   margin: 0 0 18px;
   color: var(--muted);
+  font-size: 15px;
 }
 
 .blog-meta {
@@ -987,9 +990,8 @@ textarea {
 }
 
 .blog-sidebar {
-  position: sticky;
-  top: 96px;
   display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -2011,6 +2013,8 @@ textarea {
   .value-grid,
   .why-grid,
   .faq-grid,
+  .blog-list,
+  .blog-sidebar,
   .answer-grid,
   .ai-answer-grid,
   .standard-grid,
@@ -2048,6 +2052,8 @@ textarea {
   .value-grid,
   .why-grid,
   .faq-grid,
+  .blog-list,
+  .blog-sidebar,
   .answer-grid,
   .ai-answer-grid,
   .standard-grid,
@@ -2090,14 +2096,6 @@ textarea {
 
   .product-showcase {
     padding: 14px;
-  }
-
-  .blog-card {
-    grid-template-columns: 1fr;
-  }
-
-  .blog-date {
-    width: 76px;
   }
 
   .showcase-summary {
