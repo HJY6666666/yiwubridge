@@ -539,4 +539,16 @@ document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"]').forEach((link
   });
 });
 
+const blogSearch = document.querySelector("#blogSearch");
+if (blogSearch) {
+  const blogCards = Array.from(document.querySelectorAll(".blog-list .blog-card"));
+  blogSearch.addEventListener("input", () => {
+    const query = blogSearch.value.trim().toLowerCase();
+    blogCards.forEach((card) => {
+      const text = card.textContent.toLowerCase();
+      card.hidden = Boolean(query) && !text.includes(query);
+    });
+  });
+}
+
 setLanguage(localStorage.getItem("yiwuGoAgentLang") || "en");
