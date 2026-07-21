@@ -539,6 +539,16 @@ document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"]').forEach((link
   });
 });
 
+document.querySelectorAll("[data-track-intent]").forEach((link) => {
+  link.addEventListener("click", () => {
+    trackAdEvent("select_content", {
+      event_category: "navigation",
+      event_label: link.getAttribute("data-track-intent"),
+      link_url: link.href
+    });
+  });
+});
+
 const blogSearch = document.querySelector("#blogSearch");
 if (blogSearch) {
   const blogCards = Array.from(document.querySelectorAll(".blog-list .blog-card"));
