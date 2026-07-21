@@ -1241,8 +1241,7 @@ textarea {
 
 .section-intro,
 .comparison,
-.contact-section,
-.cases {
+.contact-section {
   display: grid;
   grid-template-columns: 0.86fr 1.14fr;
   gap: 48px;
@@ -1256,8 +1255,7 @@ textarea {
 .section-copy p:not(.eyebrow),
 .section-heading p:not(.eyebrow),
 .comparison-copy p:not(.eyebrow),
-.contact-copy p:not(.eyebrow),
-.cases-copy p:not(.eyebrow) {
+.contact-copy p:not(.eyebrow) {
   max-width: 680px;
   color: var(--muted);
   font-size: 17px;
@@ -1679,6 +1677,82 @@ textarea {
   padding: 20px;
 }
 
+.case-section {
+  display: grid;
+  gap: 28px;
+}
+
+.case-section .section-heading {
+  max-width: 920px;
+  margin-bottom: 0;
+}
+
+.real-case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.real-case-card {
+  overflow: hidden;
+  border: 1px solid rgba(20, 35, 34, 0.1);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 14px 34px rgba(12, 37, 35, 0.08);
+}
+
+.real-case-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.real-case-body {
+  display: grid;
+  gap: 12px;
+  padding: 20px;
+}
+
+.real-case-body h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.real-case-body p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.case-label {
+  color: var(--gold) !important;
+  font-size: 13px !important;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.case-outcome {
+  display: grid;
+  gap: 8px;
+  margin: 2px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.case-outcome li {
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: rgba(13, 118, 110, 0.08);
+  color: var(--brand-dark);
+  font-size: 14px;
+  font-weight: 850;
+}
+
 .contact-section {
   align-items: stretch;
 }
@@ -2051,7 +2125,6 @@ textarea {
   .section-intro,
   .comparison,
   .contact-section,
-  .cases,
   .product-page-hero,
   .product-advantage-inner,
   .blog-toolbar,
@@ -2088,7 +2161,8 @@ textarea {
   .product-page-categories,
   .directory-grid,
   .solution-grid,
-  .advantage-list {
+  .advantage-list,
+  .real-case-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -2129,6 +2203,7 @@ textarea {
   .directory-grid,
   .solution-grid,
   .advantage-list,
+  .real-case-grid,
   .form-row {
     grid-template-columns: 1fr;
   }
