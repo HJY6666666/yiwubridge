@@ -36,6 +36,12 @@ Blog article focus: the Yiwu agent vs Alibaba vs 1688 guide compares real buying
 
 YiwuGo Agent is positioned for buyers who want a practical local sourcing partner rather than only an online supplier directory. The service emphasizes a clear product brief, supplier shortlisting, verification before deposit, visible quality evidence, one local contact, consolidation, and export shipping coordination.
 
+The homepage includes buyer-specific sourcing paths for Amazon and FBA sellers, wholesalers, retail chains, and small brands testing low-MOQ products. Each path explains the relevant controls, such as SKU labeling, carton marks, mixed shipment consolidation, repeat-order supplier management, and private-label packaging support.
+
+The homepage includes representative sourcing cases for Yiwu market sourcing, warehouse packing and consolidation, ecommerce prep, quality control before balance payment, and private-label packaging. These examples describe buyer type, supplier comparison, carton photos, packaging checks, SKU labels, defect documentation, and export readiness.
+
+Trust and risk control content explains supplier and quote transparency, QC failure handling, photo evidence before shipment, and secure payment options. The website also embeds a Google Maps office area map for the Yiwu office location.
+
 ## Support Service Pages
 
 YiwuGo Agent provides supplier audit support for supplier identity checks, product capability review, MOQ and lead time confirmation, quotation comparison, and supplier risk notes before buyer payment.

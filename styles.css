@@ -349,6 +349,24 @@ textarea {
   font-size: 13px;
 }
 
+.hero-trust-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 920px;
+  margin-top: 16px;
+}
+
+.hero-trust-strip span {
+  padding: 8px 11px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  font-weight: 850;
+}
+
 .section {
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
@@ -1633,6 +1651,58 @@ textarea {
   color: var(--muted);
 }
 
+.buyer-solutions,
+.trust-section {
+  padding-top: 60px;
+}
+
+.buyer-grid,
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.buyer-card,
+.trust-card {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  min-height: 246px;
+  padding: 24px;
+  border: 1px solid rgba(20, 35, 34, 0.1);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 12px 32px rgba(12, 37, 35, 0.06);
+}
+
+.buyer-card span,
+.trust-card span {
+  width: fit-content;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: rgba(226, 161, 58, 0.16);
+  color: #8a5b12;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.buyer-card h3,
+.trust-card h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 22px;
+  line-height: 1.18;
+}
+
+.buyer-card p,
+.trust-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
 [data-reveal="fade-up"] {
   opacity: 0;
   transform: translateY(28px);
@@ -1729,7 +1799,7 @@ textarea {
 }
 
 .case-label {
-  color: var(--gold) !important;
+  color: var(--accent) !important;
   font-size: 13px !important;
   font-weight: 900;
   letter-spacing: 0.03em;
@@ -1751,6 +1821,21 @@ textarea {
   color: var(--brand-dark);
   font-size: 14px;
   font-weight: 850;
+}
+
+.trust-card {
+  background: #fffdf8;
+}
+
+.trust-card span {
+  display: inline-grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  padding: 0;
+  border-radius: 8px;
+  background: var(--brand-dark);
+  color: var(--white);
 }
 
 .contact-section {
@@ -1838,6 +1923,25 @@ textarea {
   margin: 12px 0 0;
   color: var(--brand);
   font-weight: 800;
+}
+
+.map-section {
+  padding-top: 48px;
+}
+
+.map-card {
+  overflow: hidden;
+  border: 1px solid rgba(20, 35, 34, 0.1);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 14px 34px rgba(12, 37, 35, 0.08);
+}
+
+.map-card iframe {
+  display: block;
+  width: 100%;
+  min-height: 360px;
+  border: 0;
 }
 
 .why {
@@ -2149,6 +2253,8 @@ textarea {
   .value-grid,
   .why-grid,
   .faq-grid,
+  .buyer-grid,
+  .trust-grid,
   .quick-paths,
   .blog-list,
   .blog-sidebar,
@@ -2191,6 +2297,8 @@ textarea {
   .value-grid,
   .why-grid,
   .faq-grid,
+  .buyer-grid,
+  .trust-grid,
   .blog-list,
   .blog-sidebar,
   .answer-grid,
