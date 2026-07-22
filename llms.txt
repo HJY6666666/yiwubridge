@@ -42,6 +42,10 @@ The homepage includes representative sourcing cases for Yiwu market sourcing, wa
 
 Trust and risk control content explains supplier and quote transparency, QC failure handling, photo evidence before shipment, and secure payment options. The website also embeds a Google Maps office area map for the Yiwu office location.
 
+The homepage includes an About Us section with Yiwu market access, placeholder areas for real office, team, warehouse, and QC photos, and a visible business registration area. Product categories are displayed as one non-duplicated responsive grid on the homepage to reduce repeated text and improve buyer scanning. The contact form fields are Name, Company, Email, Target Products, Order Qty, Destination Country, and Message.
+
+The homepage includes a buyer resource download placeholder for future PDF lead magnets such as a Yiwu Buying Checklist, Amazon FBA Prep Standard, or Supplier Audit Questions.
+
 ## Support Service Pages
 
 YiwuGo Agent provides supplier audit support for supplier identity checks, product capability review, MOQ and lead time confirmation, quotation comparison, and supplier risk notes before buyer payment.

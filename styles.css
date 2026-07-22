@@ -1345,34 +1345,17 @@ textarea {
 
 .category-grid {
   display: grid;
-  gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(138px, 1fr));
+  gap: 14px;
   width: 100%;
-  overflow: hidden;
   padding: 12px 0 18px;
-  mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
-}
-
-.category-row {
-  display: flex;
-  width: max-content;
-  gap: 26px;
-  animation: category-scroll-left 46s linear infinite;
-}
-
-.category-row.reverse {
-  animation-name: category-scroll-right;
-  animation-duration: 52s;
-}
-
-.category-grid:hover .category-row {
-  animation-play-state: paused;
 }
 
 .category-card {
   border: 1px solid rgba(20, 35, 34, 0.06);
   cursor: pointer;
   font: inherit;
-  width: 174px;
+  width: 100%;
   min-height: 126px;
   padding: 16px 12px;
   display: grid;
@@ -1550,24 +1533,6 @@ textarea {
   }
 }
 
-@keyframes category-scroll-left {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes category-scroll-right {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
 .callout {
   display: flex;
   align-items: center;
@@ -1605,6 +1570,66 @@ textarea {
 
 .value-card div:last-child {
   padding: 20px;
+}
+
+.about-section {
+  padding-top: 64px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.about-card {
+  overflow: hidden;
+  border: 1px solid rgba(20, 35, 34, 0.1);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 12px 32px rgba(12, 37, 35, 0.06);
+}
+
+.about-card img,
+.placeholder-visual {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.license-card img {
+  object-fit: contain;
+  padding: 16px;
+  background: #fffdf8;
+}
+
+.placeholder-visual {
+  display: grid;
+  place-items: center;
+  border-bottom: 1px dashed rgba(13, 118, 110, 0.28);
+  background: linear-gradient(135deg, rgba(13, 118, 110, 0.08), rgba(226, 161, 58, 0.12));
+  color: var(--brand-dark);
+  font-weight: 900;
+}
+
+.about-card div:last-child {
+  padding: 18px;
+}
+
+.about-card h3,
+.about-card p {
+  margin: 0;
+}
+
+.about-card h3 {
+  margin-bottom: 8px;
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+.about-card p {
+  color: var(--muted);
+  font-size: 14px;
 }
 
 .how-it-works {
@@ -1944,6 +1969,32 @@ textarea {
   border: 0;
 }
 
+.download-section {
+  padding-top: 40px;
+}
+
+.download-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 30px;
+  border: 1px solid rgba(20, 35, 34, 0.1);
+  border-radius: 8px;
+  background: linear-gradient(135deg, #fffdf8, #eef3ef);
+  box-shadow: 0 12px 32px rgba(12, 37, 35, 0.06);
+}
+
+.download-card h2,
+.download-card p {
+  margin: 0;
+}
+
+.download-card p:not(.eyebrow) {
+  max-width: 760px;
+  color: var(--muted);
+}
+
 .why {
   background: var(--brand-dark);
   color: var(--white);
@@ -2253,6 +2304,7 @@ textarea {
   .value-grid,
   .why-grid,
   .faq-grid,
+  .about-grid,
   .buyer-grid,
   .trust-grid,
   .quick-paths,
@@ -2274,6 +2326,11 @@ textarea {
 
   .product-showcase {
     grid-template-columns: 1fr;
+  }
+
+  .download-card {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
 
@@ -2297,6 +2354,7 @@ textarea {
   .value-grid,
   .why-grid,
   .faq-grid,
+  .about-grid,
   .buyer-grid,
   .trust-grid,
   .blog-list,
@@ -2324,17 +2382,7 @@ textarea {
     width: 100%;
   }
 
-  .category-row {
-    gap: 18px;
-    animation-duration: 34s;
-  }
-
-  .category-row.reverse {
-    animation-duration: 39s;
-  }
-
   .category-card {
-    width: 142px;
     min-height: 118px;
   }
 

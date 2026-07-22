@@ -273,28 +273,12 @@
         </button>
 
         <div class="nav-links" id="navLinks">
-          <details class="nav-menu">
-            <summary data-i18n="nav.services">Services</summary>
-            <div class="nav-panel">
-              <a href="./products.html#yiwu-market-guide" data-i18n="nav.sourcing">Yiwu sourcing</a>
-              <a href="./supplier-audit.html" data-i18n="nav.supplier">Supplier matching</a>
-              <a href="#how-it-works" data-i18n="nav.logistics">Warehouse and logistics</a>
-            </div>
-          </details>
-          <a href="./products.html" data-i18n="nav.products">Products</a>
-          <a href="#buyer-solutions">Buyer solutions</a>
-          <details class="nav-menu">
-            <summary data-i18n="nav.support">Support</summary>
-            <div class="nav-panel">
-              <a href="./supplier-audit.html" data-i18n="nav.audit">Supplier audit</a>
-              <a href="./quality-control.html" data-i18n="nav.quality">Quality control</a>
-              <a href="./product-photography.html" data-i18n="nav.photo">Product photography</a>
-            </div>
-          </details>
-          <a href="./blog/" data-i18n="nav.blog">Blog</a>
-          <a href="#cases" data-i18n="nav.cases">Cases</a>
-          <a href="#trust">Trust</a>
-          <a href="#contact" data-i18n="nav.contact">Contact</a>
+          <a href="#top">Home</a>
+          <a href="#services">Sourcing Services</a>
+          <a href="#products">Product Categories</a>
+          <a href="#cases">Case Studies</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact Us</a>
           <label class="language-picker">
             <span data-i18n="nav.language">Language</span>
             <select id="languageSelect" aria-label="Select language">
@@ -404,6 +388,48 @@
           </p>
         </div>
         <div class="proof-grid" id="proofGrid"></div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About Us</p>
+          <h2>Yiwu local sourcing support with room for real verification</h2>
+          <p>
+            YiwuGo Agent is built for overseas buyers who need a practical local team in Yiwu, not only online
+            supplier links. We support supplier search, quotation comparison, samples, quality checks, warehouse
+            consolidation, private-label packing, and export shipping coordination.
+          </p>
+        </div>
+        <div class="about-grid">
+          <article class="about-card">
+            <img src="./assets/yiwu-trade-city-exterior.jpg" alt="Yiwu International Trade City exterior near YiwuGo Agent sourcing area" loading="lazy" />
+            <div>
+              <h3>Yiwu market access</h3>
+              <p>Local sourcing around Yiwu International Trade City and nearby supply hubs for low-MOQ and mixed-category buying.</p>
+            </div>
+          </article>
+          <article class="about-card placeholder-card">
+            <div class="placeholder-visual">Office / Team Photo</div>
+            <div>
+              <h3>Team photo placeholder</h3>
+              <p>Reserved for your real Yiwu office, sourcing specialist, or buyer reception photos.</p>
+            </div>
+          </article>
+          <article class="about-card placeholder-card">
+            <div class="placeholder-visual">Warehouse / QC Photo</div>
+            <div>
+              <h3>Warehouse and QC placeholder</h3>
+              <p>Reserved for actual warehouse packing, carton labeling, quality inspection, and shipment photos.</p>
+            </div>
+          </article>
+          <article class="about-card license-card">
+            <img src="./assets/business-license.jpg" alt="Business license for Nuoxi Department Store, Chang'an Town" loading="lazy" />
+            <div>
+              <h3>Business registration</h3>
+              <p>Nuoxi Department Store, Chang'an Town. Unified Social Credit Code: 92330481MABMTU6L76.</p>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section class="section value-section" id="support">
@@ -630,61 +656,37 @@
           <input type="text" name="_gotcha" class="hidden-field" tabindex="-1" autocomplete="off" />
           <div class="form-row">
             <label>
-              <span data-i18n="form.name">Full name</span>
+              <span>Name</span>
               <input name="name" type="text" required />
             </label>
             <label>
-              <span data-i18n="form.email">Email</span>
+              <span>Company</span>
+              <input name="Company" type="text" placeholder="Company or store name" />
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              <span>Email</span>
               <input name="email" type="email" required />
             </label>
-          </div>
-          <div class="form-row">
             <label>
-              <span data-i18n="form.whatsapp">WhatsApp</span>
-              <input name="WhatsApp" type="tel" required />
-            </label>
-            <label>
-              <span data-i18n="form.country">Country</span>
-              <input name="Country" type="text" required />
+              <span>Destination Country</span>
+              <input name="Destination Country" type="text" required />
             </label>
           </div>
           <label>
-            <span>Product name</span>
-            <input name="Product name" type="text" placeholder="e.g. storage box, makeup mirror, kitchen tool" required />
-          </label>
-          <div class="form-row">
-            <label>
-              <span>Target price</span>
-              <input name="Target price" type="text" placeholder="e.g. USD 1.20 per piece" />
-            </label>
-            <label>
-              <span>Expected quantity</span>
-              <input name="Expected quantity" type="text" placeholder="e.g. 500 pcs / 20 cartons / 1 container" />
-            </label>
-          </div>
-          <label>
-            <span data-i18n="form.category">Interested categories</span>
-            <select name="Interested category" id="categorySelect" required></select>
+            <span>Target Products</span>
+            <input name="Target Products" type="text" placeholder="e.g. storage box, makeup mirror, kitchen tool" required />
           </label>
           <label>
-            <span data-i18n="form.budget">Purchase budget</span>
-            <select name="Purchase budget" required>
-              <option value="Under $1,000">Under $1,000</option>
-              <option value="$1,000 - $5,000">$1,000 - $5,000</option>
-              <option value="$5,000 - $10,000">$5,000 - $10,000</option>
-              <option value="$10,000 - $50,000">$10,000 - $50,000</option>
-              <option value="$50,000+">$50,000+</option>
-            </select>
+            <span>Order Qty</span>
+            <input name="Order Qty" type="text" placeholder="e.g. 500 pcs / 20 cartons / 1 container" required />
           </label>
           <label>
-            <span data-i18n="form.links">Product links or reference URLs</span>
-            <input name="Product links or reference URLs" type="url" placeholder="Yiwugo / 1688 / Alibaba / Amazon link" />
+            <span>Message</span>
+            <textarea name="Message" rows="5" placeholder="Share target price, product links, packaging needs, timeline, or RFQ details." required></textarea>
           </label>
-          <label>
-            <span data-i18n="form.message">Inquiry details</span>
-            <textarea name="Inquiry details" rows="5" required></textarea>
-          </label>
-          <button class="button primary form-button" type="submit" data-i18n="form.submit">Submit inquiry</button>
+          <button class="button primary form-button" type="submit">Get Free Sourcing Quote</button>
           <p class="form-status" id="formStatus" role="status"></p>
         </form>
       </section>
@@ -814,6 +816,20 @@
               <p>Combine multiple suppliers, reduce wasted CBM, and simplify customs with one Yiwu warehouse.</p>
             </div>
           </article>
+        </div>
+      </section>
+
+      <section class="section download-section" id="sourcing-resources">
+        <div class="download-card">
+          <div>
+            <p class="eyebrow">Buyer resources</p>
+            <h2>Download guide placeholder for future lead capture</h2>
+            <p>
+              Reserve this area for downloadable PDFs such as a Yiwu Buying Checklist, Amazon FBA Prep Standard,
+              or Supplier Audit Questions. When your PDF is ready, this module can collect buyer emails before download.
+            </p>
+          </div>
+          <a class="button primary" href="#contact">Request the sourcing checklist</a>
         </div>
       </section>
 
