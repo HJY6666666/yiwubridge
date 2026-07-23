@@ -37,6 +37,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://yiwugoagent.com/blog.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://yiwugoagent.com/sourcing-guide.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
     <loc>https://yiwugoagent.com/blog/yiwu-agent-vs-alibaba-1688-cost-comparison-2026.html</loc>
     <lastmod>2026-07-22</lastmod>
     <changefreq>monthly</changefreq>
