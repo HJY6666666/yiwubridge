@@ -1,4 +1,4 @@
-# YiwuGo Agent Google Ads Launch Plan
+# YiwuBridge Google Ads Launch Plan
 
 Website: https://yiwugoagent.com/
 
@@ -25,7 +25,7 @@ Ad groups:
 
 - Yiwu Sourcing Agent
 - China Sourcing Agent
-- Yiwugo Buying Service
+- China Marketplace Sourcing
 - Warehouse Consolidation
 - Amazon FBA and Ecommerce Sourcing
 
@@ -63,7 +63,7 @@ Use these final URLs by ad group:
 
 - Yiwu Sourcing Agent: https://yiwugoagent.com/
 - China Sourcing Agent: https://yiwugoagent.com/
-- Yiwugo Buying Service: https://yiwugoagent.com/blog/how-to-buy-from-yiwugo-safely-2026.html
+- China Marketplace Sourcing: https://yiwugoagent.com/blog/how-to-buy-from-yiwugo-safely-2026.html
 - Warehouse Consolidation: https://yiwugoagent.com/blog/cut-china-shipping-costs-warehouse-consolidation.html
 - Amazon FBA and Ecommerce Sourcing: https://yiwugoagent.com/blog/why-small-ecommerce-sellers-need-yiwu-sourcing-agent-2026.html
 

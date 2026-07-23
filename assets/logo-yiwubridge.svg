@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1530" height="420" viewBox="0 0 1530 420" role="img" aria-labelledby="title desc">
+  <title id="title">YiwuBridge logo</title>
+  <desc id="desc">YiwuBridge sourcing agency logo with bridge, globe, and export box mark.</desc>
+  <rect width="1530" height="420" fill="#ffffff"/>
+  <g transform="translate(90 54)">
+    <path d="M154 8c77 0 140 63 140 140 0 91-106 174-140 194C120 322 14 239 14 148 14 71 77 8 154 8Z" fill="#0b706b"/>
+    <path d="M154 38c61 0 110 49 110 110 0 58-45 107-103 110l-7 34-8-34c-57-4-102-52-102-110 0-61 49-110 110-110Z" fill="#ffffff"/>
+    <path d="M74 150h160M89 99c32 17 98 17 130 0M94 201c30-16 90-16 120 0M154 48v191M112 58c-18 43-22 120-5 177M196 58c18 43 22 120 5 177" fill="none" stroke="#0b706b" stroke-width="12" stroke-linecap="round"/>
+    <path d="M77 214l77 38 77-38v-55H77v55Z" fill="#f0442b"/>
+    <path d="M77 159l77 36 77-36-77-33-77 33Z" fill="#ff5a3f"/>
+    <path d="M154 195v57M77 159l77 36 77-36" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M10 214c45 36 105 38 156 10 51-28 84-79 120-128" fill="none" stroke="#f0442b" stroke-width="15" stroke-linecap="round"/>
+    <path d="M289 90l8 60-56-23 48-37Z" fill="#f0442b"/>
+  </g>
+  <g transform="translate(430 103)">
+    <text x="0" y="154" font-family="Inter, Arial, Helvetica, sans-serif" font-size="118" font-weight="800" letter-spacing="0" fill="#172027">Yiwu</text>
+    <text x="286" y="154" font-family="Inter, Arial, Helvetica, sans-serif" font-size="118" font-weight="800" letter-spacing="0" fill="#f0442b">Bridge</text>
+    <text x="4" y="218" font-family="Inter, Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="4" fill="#0b706b">SOURCING • QC • CONSOLIDATION • SHIPPING</text>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">YiwuBridge favicon</title>
+  <rect width="512" height="512" rx="108" fill="#0b706b"/>
+  <path d="M256 78c89 0 162 73 162 162 0 104-122 199-162 223C216 439 94 344 94 240 94 151 167 78 256 78Z" fill="#ffffff"/>
+  <path d="M142 245h228M169 171c48 23 126 23 174 0M178 318c45-24 111-24 156 0M256 105v268M201 122c-28 69-29 167-2 238M311 122c28 69 29 167 2 238" fill="none" stroke="#0b706b" stroke-width="22" stroke-linecap="round"/>
+  <path d="M150 313l106 52 106-52v-73H150v73Z" fill="#f0442b"/>
+  <path d="M150 240l106 49 106-49-106-45-106 45Z" fill="#ff5a3f"/>
+  <path d="M256 289v76M150 240l106 49 106-49" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

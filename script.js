@@ -9,27 +9,27 @@ const translations = {
       secondary: "Explore categories"
     },
     stats: { suppliers: "10,000+", suppliersLabel: "Verified suppliers", categories: "50,000+", categoriesLabel: "Product options", response: "2h", responseLabel: "Business-hour reply" },
-    services: { eyebrow: "Built around the Yiwu market", title: "A practical Yiwu agent between buyers and China supply", body: "YiwuGo Agent gives importers, retailers, wholesalers, and e-commerce sellers a local team that can move from product discovery to shipment without losing control of cost, quality, or timing." },
+    services: { eyebrow: "Built around the Yiwu market", title: "A practical Yiwu agent between buyers and China supply", body: "YiwuBridge gives importers, retailers, wholesalers, and e-commerce sellers a local team that can move from product discovery to shipment without losing control of cost, quality, or timing." },
     products: { eyebrow: "Product categories", title: "Source across Yiwu's strongest categories", body: "From small commodities to private-label collections, we match your target price, quality level, packaging, and compliance requirements." },
     callout: { title: "Can't find your desired category?", body: "Send us your product photos, links, or specs. A sourcing specialist will reply with the next step.", cta: "Get sourcing help" },
     compare: { eyebrow: "More than an online marketplace", title: "We do what listings cannot do for you", body: "Your Yiwu team checks suppliers offline, negotiates details in Chinese, handles samples, inspects goods, and consolidates mixed orders before export." },
     value: { eyebrow: "Value-added support", title: "Services that reduce hidden supply-chain costs" },
     cases: { eyebrow: "Buyer stories", title: "Trusted by importers building repeat China supply", body: "We help new buyers start carefully and experienced buyers regain visibility across price, production, packaging, and shipment." },
-    contact: { eyebrow: "Start sourcing", title: "Tell YiwuGo Agent what you need", body: "Share your product category, target market, budget, and timeline. We will prepare a practical sourcing plan.", point1: "Supplier search and quotation comparison", point2: "Sample, inspection, and warehouse consolidation", point3: "English, Spanish, Portuguese, French, Japanese, Russian, and Chinese support" },
-    form: { name: "Full name", email: "Email", whatsapp: "WhatsApp", country: "Country", category: "Interested categories", budget: "Purchase budget", links: "Product links or reference URLs", files: "Upload product photos or specs", message: "Inquiry details", submit: "Submit inquiry", success: "Thanks. Your inquiry has been sent to YiwuGo Agent." },
+    contact: { eyebrow: "Start sourcing", title: "Tell YiwuBridge what you need", body: "Share your product category, target market, budget, and timeline. We will prepare a practical sourcing plan.", point1: "Supplier search and quotation comparison", point2: "Sample, inspection, and warehouse consolidation", point3: "English, Spanish, Portuguese, French, Japanese, Russian, and Chinese support" },
+    form: { name: "Full name", email: "Email", whatsapp: "WhatsApp", country: "Country", category: "Interested categories", budget: "Purchase budget", links: "Product links or reference URLs", files: "Upload product photos or specs", message: "Inquiry details", submit: "Submit inquiry", success: "Thanks. Your inquiry has been sent to YiwuBridge." },
     footer: { body: "Yiwu sourcing, supplier management, inspection, consolidation, and export support for global buyers.", office: "Yiwu Office", address: "No. 2, Building 22, Xingzhong Community, Chouzhou North Road, Choucheng Street, Yiwu City, Jinhua City, Zhejiang Province, China", languages: "Support Languages" }
   },
   es: {
     nav: { services: "Servicios", sourcing: "Compras en Yiwu", supplier: "Matching proveedores", logistics: "Almacén y logística", products: "Productos", support: "Soporte", audit: "Auditoría proveedor", quality: "Control de calidad", photo: "Fotografía producto", blog: "Blog", cases: "Casos", contact: "Contacto", language: "Idioma" },
     hero: { eyebrow: "Agente de compras en Yiwu", title: "Compra millones de productos desde Yiwu y China", subtitle: "Un solo equipo para buscar proveedores, negociar precios, controlar calidad, consolidar almacén y enviar al exterior.", cta: "Cuéntanos tu necesidad", secondary: "Ver categorías" },
     stats: { suppliers: "10.000+", suppliersLabel: "Proveedores verificados", categories: "50,000+", categoriesLabel: "Opciones de producto", response: "2 h", responseLabel: "Respuesta laboral" },
-    services: { eyebrow: "Basado en el mercado de Yiwu", title: "Un agente práctico entre compradores y suministro chino", body: "YiwuGo Agent ofrece a importadores, minoristas, mayoristas y e-commerce un equipo local que gestiona desde la búsqueda hasta el envío." },
+    services: { eyebrow: "Basado en el mercado de Yiwu", title: "Un agente práctico entre compradores y suministro chino", body: "YiwuBridge ofrece a importadores, minoristas, mayoristas y e-commerce un equipo local que gestiona desde la búsqueda hasta el envío." },
     products: { eyebrow: "Categorías", title: "Compra en las categorías fuertes de Yiwu", body: "Ajustamos precio objetivo, calidad, empaque y requisitos de cumplimiento para productos pequeños y marcas privadas." },
     callout: { title: "¿No encuentras tu categoría?", body: "Envíanos fotos, enlaces o especificaciones. Un especialista responderá con el siguiente paso.", cta: "Pedir ayuda" },
     compare: { eyebrow: "Más que un marketplace", title: "Hacemos lo que una ficha no puede hacer", body: "El equipo revisa proveedores offline, negocia en chino, gestiona muestras, inspecciona y consolida pedidos mixtos." },
     value: { eyebrow: "Soporte adicional", title: "Servicios que reducen costes ocultos" },
     cases: { eyebrow: "Historias de compradores", title: "Confianza para importadores con compras recurrentes", body: "Ayudamos a nuevos compradores a empezar con cuidado y a compradores expertos a recuperar visibilidad." },
-    contact: { eyebrow: "Empieza a comprar", title: "Cuéntale a YiwuGo Agent qué necesitas", body: "Comparte categoría, mercado, presupuesto y fecha. Prepararemos un plan práctico.", point1: "Búsqueda de proveedores y comparación de cotizaciones", point2: "Muestras, inspección y consolidación", point3: "Soporte en EN, ES, PT, FR, JA, RU y chino" },
+    contact: { eyebrow: "Empieza a comprar", title: "Cuéntale a YiwuBridge qué necesitas", body: "Comparte categoría, mercado, presupuesto y fecha. Prepararemos un plan práctico.", point1: "Búsqueda de proveedores y comparación de cotizaciones", point2: "Muestras, inspección y consolidación", point3: "Soporte en EN, ES, PT, FR, JA, RU y chino" },
     form: { name: "Nombre completo", email: "Email", whatsapp: "WhatsApp", country: "País", category: "Categorías de interés", budget: "Presupuesto", links: "Enlaces de producto o referencias", files: "Subir fotos o especificaciones", message: "Detalles", submit: "Enviar consulta", success: "Gracias. Tu consulta está lista para seguimiento." },
     footer: { body: "Compras en Yiwu, gestión de proveedores, inspección, consolidación y exportación.", office: "Oficina en Yiwu", address: "No. 2, Building 22, Xingzhong Community, Chouzhou North Road, Choucheng Street, Yiwu City, Jinhua City, Zhejiang Province, China", languages: "Idiomas de soporte" }
   },
@@ -37,13 +37,13 @@ const translations = {
     nav: { services: "Serviços", sourcing: "Compras em Yiwu", supplier: "Matching fornecedor", logistics: "Armazém e logística", products: "Produtos", support: "Suporte", audit: "Auditoria fornecedor", quality: "Controle qualidade", photo: "Foto de produto", blog: "Blog", cases: "Casos", contact: "Contato", language: "Idioma" },
     hero: { eyebrow: "Agente de compras em Yiwu", title: "Compre milhões de produtos de Yiwu e da China", subtitle: "Uma equipe para fornecedores, negociação, qualidade, consolidação em armazém e envio internacional.", cta: "Conte sua necessidade", secondary: "Ver categorias" },
     stats: { suppliers: "10.000+", suppliersLabel: "Fornecedores verificados", categories: "50,000+", categoriesLabel: "Opções de produto", response: "2 h", responseLabel: "Resposta em horário comercial" },
-    services: { eyebrow: "Criado para o mercado de Yiwu", title: "Um agente prático entre compradores e a cadeia chinesa", body: "A YiwuGo Agent dá a importadores, varejistas, atacadistas e e-commerces uma equipe local do produto ao embarque." },
+    services: { eyebrow: "Criado para o mercado de Yiwu", title: "Um agente prático entre compradores e a cadeia chinesa", body: "A YiwuBridge dá a importadores, varejistas, atacadistas e e-commerces uma equipe local do produto ao embarque." },
     products: { eyebrow: "Categorias", title: "Compre nas categorias fortes de Yiwu", body: "Atendemos preço-alvo, nível de qualidade, embalagem e conformidade para commodities e private label." },
     callout: { title: "Não encontrou sua categoria?", body: "Envie fotos, links ou especificações. Um especialista responderá com o próximo passo.", cta: "Pedir ajuda" },
     compare: { eyebrow: "Mais que marketplace", title: "Fazemos o que anúncios não fazem", body: "Verificamos fornecedores offline, negociamos em chinês, cuidamos de amostras, inspeção e consolidação." },
     value: { eyebrow: "Suporte adicional", title: "Serviços que reduzem custos ocultos" },
     cases: { eyebrow: "Histórias de compradores", title: "Confiança para importadores com compras recorrentes", body: "Ajudamos novos compradores a começar com cuidado e compradores experientes a ter mais visibilidade." },
-    contact: { eyebrow: "Comece a comprar", title: "Conte à YiwuGo Agent o que você precisa", body: "Compartilhe categoria, mercado, orçamento e prazo. Prepararemos um plano prático.", point1: "Busca de fornecedores e comparação de preços", point2: "Amostras, inspeção e consolidação", point3: "Suporte em EN, ES, PT, FR, JA, RU e chinês" },
+    contact: { eyebrow: "Comece a comprar", title: "Conte à YiwuBridge o que você precisa", body: "Compartilhe categoria, mercado, orçamento e prazo. Prepararemos um plano prático.", point1: "Busca de fornecedores e comparação de preços", point2: "Amostras, inspeção e consolidação", point3: "Suporte em EN, ES, PT, FR, JA, RU e chinês" },
     form: { name: "Nome completo", email: "Email", whatsapp: "WhatsApp", country: "País", category: "Categorias de interesse", budget: "Orçamento", links: "Links do produto ou referencias", files: "Enviar fotos ou especificacoes", message: "Detalhes", submit: "Enviar consulta", success: "Obrigado. Sua consulta está pronta para acompanhamento." },
     footer: { body: "Compras em Yiwu, fornecedores, inspeção, consolidação e exportação.", office: "Escritório em Yiwu", address: "No. 2, Building 22, Xingzhong Community, Chouzhou North Road, Choucheng Street, Yiwu City, Jinhua City, Zhejiang Province, China", languages: "Idiomas de suporte" }
   },
@@ -51,13 +51,13 @@ const translations = {
     nav: { services: "Services", sourcing: "Sourcing Yiwu", supplier: "Matching fournisseur", logistics: "Entrepot et logistique", products: "Produits", support: "Support", audit: "Audit fournisseur", quality: "Controle qualite", photo: "Photo produit", blog: "Blog", cases: "Cas", contact: "Contact", language: "Langue" },
     hero: { eyebrow: "Agent sourcing a Yiwu", title: "Sourcez des millions de produits a Yiwu et en Chine", subtitle: "Une equipe pour fournisseurs, prix, qualite, consolidation et transport international.", cta: "Partager votre besoin", secondary: "Voir les categories" },
     stats: { suppliers: "10 000+", suppliersLabel: "Fournisseurs verifies", categories: "50,000+", categoriesLabel: "Options produit", response: "2 h", responseLabel: "Reponse ouvrable" },
-    services: { eyebrow: "Ancre dans le marche de Yiwu", title: "Un agent pratique entre acheteurs et supply chain chinoise", body: "YiwuGo Agent accompagne importateurs, distributeurs, grossistes et e-commerces avec une equipe locale du sourcing a l'expedition." },
+    services: { eyebrow: "Ancre dans le marche de Yiwu", title: "Un agent pratique entre acheteurs et supply chain chinoise", body: "YiwuBridge accompagne importateurs, distributeurs, grossistes et e-commerces avec une equipe locale du sourcing a l'expedition." },
     products: { eyebrow: "Categories", title: "Sourcez dans les categories fortes de Yiwu", body: "Nous alignons prix cible, qualite, emballage et conformite pour produits courants et marques privees." },
     callout: { title: "Votre categorie n'est pas la?", body: "Envoyez photos, liens ou specs. Un specialiste repondra avec la prochaine etape.", cta: "Demander aide" },
     compare: { eyebrow: "Plus qu'une marketplace", title: "Nous faisons ce qu'une fiche ne fait pas", body: "Nous verifions hors ligne, negocions en chinois, gerons echantillons, inspections et consolidation." },
     value: { eyebrow: "Support additionnel", title: "Services qui reduisent les couts caches" },
     cases: { eyebrow: "Histoires acheteurs", title: "Un partenaire pour importateurs reguliers", body: "Nous aidons les nouveaux acheteurs a commencer prudemment et les plus experimentes a retrouver de la visibilite." },
-    contact: { eyebrow: "Demarrer", title: "Dites a YiwuGo Agent ce qu'il vous faut", body: "Partagez categorie, marche, budget et delai. Nous preparons un plan pratique.", point1: "Recherche fournisseurs et comparaison devis", point2: "Echantillons, inspection et consolidation", point3: "Support EN, ES, PT, FR, JA, RU et chinois" },
+    contact: { eyebrow: "Demarrer", title: "Dites a YiwuBridge ce qu'il vous faut", body: "Partagez categorie, marche, budget et delai. Nous preparons un plan pratique.", point1: "Recherche fournisseurs et comparaison devis", point2: "Echantillons, inspection et consolidation", point3: "Support EN, ES, PT, FR, JA, RU et chinois" },
     form: { name: "Nom complet", email: "Email", whatsapp: "WhatsApp", country: "Pays", category: "Categories visees", budget: "Budget", links: "Liens produit ou references", files: "Importer photos ou specifications", message: "Details", submit: "Envoyer", success: "Merci. Votre demande est prete pour suivi." },
     footer: { body: "Sourcing Yiwu, gestion fournisseurs, inspection, consolidation et export.", office: "Bureau Yiwu", address: "No. 2, Building 22, Xingzhong Community, Chouzhou North Road, Choucheng Street, Yiwu City, Jinhua City, Zhejiang Province, China", languages: "Langues de support" }
   },
@@ -65,13 +65,13 @@ const translations = {
     nav: { services: "サービス", sourcing: "義烏仕入れ", supplier: "仕入先マッチング", logistics: "倉庫と物流", products: "商品", support: "サポート", audit: "仕入先監査", quality: "品質管理", photo: "商品撮影", blog: "ブログ", cases: "事例", contact: "連絡先", language: "言語" },
     hero: { eyebrow: "義烏仕入れ代行", title: "義烏と中国から数百万点の商品を調達", subtitle: "仕入先探し、価格交渉、品質管理、倉庫集約、国際配送まで一つのチームで対応します。", cta: "要望を送る", secondary: "カテゴリを見る" },
     stats: { suppliers: "10,000+", suppliersLabel: "確認済み仕入先", categories: "50,000+", categoriesLabel: "調達可能商品", response: "2時間", responseLabel: "営業時間内返信" },
-    services: { eyebrow: "義烏市場を中心に", title: "海外バイヤーと中国供給をつなぐ実務型エージェント", body: "YiwuGo Agentは輸入業者、小売、卸、EC事業者に、商品発見から出荷まで現地チームを提供します。" },
+    services: { eyebrow: "義烏市場を中心に", title: "海外バイヤーと中国供給をつなぐ実務型エージェント", body: "YiwuBridgeは輸入業者、小売、卸、EC事業者に、商品発見から出荷まで現地チームを提供します。" },
     products: { eyebrow: "商品カテゴリ", title: "義烏の強いカテゴリで調達", body: "目標価格、品質、包装、規制要件に合わせて商品を探します。" },
     callout: { title: "希望カテゴリがありませんか？", body: "写真、リンク、仕様を送ってください。担当者が次のステップを返信します。", cta: "相談する" },
     compare: { eyebrow: "オンライン市場以上", title: "商品ページだけではできない仕事をします", body: "仕入先確認、中国語交渉、サンプル、検品、混載出荷を現地で管理します。" },
     value: { eyebrow: "付加サービス", title: "隠れたコストを抑えるサポート" },
     cases: { eyebrow: "バイヤー事例", title: "継続的な中国仕入れを支えるパートナー", body: "初めての買い付けも、既存サプライチェーンの見直しもサポートします。" },
-    contact: { eyebrow: "仕入れ開始", title: "YiwuGo Agentにご要望をお知らせください", body: "カテゴリ、市場、予算、希望時期を共有してください。実務的な調達案を作成します。", point1: "仕入先検索と見積比較", point2: "サンプル、検品、倉庫集約", point3: "EN / ES / PT / FR / JA / RU / 中文対応" },
+    contact: { eyebrow: "仕入れ開始", title: "YiwuBridgeにご要望をお知らせください", body: "カテゴリ、市場、予算、希望時期を共有してください。実務的な調達案を作成します。", point1: "仕入先検索と見積比較", point2: "サンプル、検品、倉庫集約", point3: "EN / ES / PT / FR / JA / RU / 中文対応" },
     form: { name: "氏名", email: "メール", whatsapp: "WhatsApp", country: "国", category: "希望カテゴリ", budget: "予算", links: "商品リンクまたは参考URL", files: "商品写真または仕様書をアップロード", message: "詳細", submit: "送信", success: "ありがとうございます。お問い合わせ内容を確認します。" },
     footer: { body: "義烏仕入れ、仕入先管理、検品、集約、輸出サポート。", office: "義烏オフィス", address: "No. 2, Building 22, Xingzhong Community, Chouzhou North Road, Choucheng Street, Yiwu City, Jinhua City, Zhejiang Province, China", languages: "対応言語" }
   },
@@ -79,13 +79,13 @@ const translations = {
     nav: { services: "Услуги", sourcing: "Закупки в Иу", supplier: "Подбор поставщика", logistics: "Склад и логистика", products: "Товары", support: "Поддержка", audit: "Аудит поставщика", quality: "Контроль качества", photo: "Фото товаров", blog: "Блог", cases: "Кейсы", contact: "Контакты", language: "Язык" },
     hero: { eyebrow: "Агент по закупкам в Иу", title: "Закупайте миллионы товаров из Иу и Китая", subtitle: "Одна команда для поиска поставщиков, переговоров, контроля качества, консолидации и международной доставки.", cta: "Описать запрос", secondary: "Категории" },
     stats: { suppliers: "10 000+", suppliersLabel: "Проверенных поставщиков", categories: "50,000+", categoriesLabel: "Вариантов товаров", response: "2 ч", responseLabel: "Ответ в рабочее время" },
-    services: { eyebrow: "Вокруг рынка Иу", title: "Практичный агент между покупателями и поставками из Китая", body: "YiwuGo Agent помогает импортерам, ритейлу, оптовикам и e-commerce пройти путь от поиска товара до отгрузки." },
+    services: { eyebrow: "Вокруг рынка Иу", title: "Практичный агент между покупателями и поставками из Китая", body: "YiwuBridge помогает импортерам, ритейлу, оптовикам и e-commerce пройти путь от поиска товара до отгрузки." },
     products: { eyebrow: "Категории", title: "Закупки в сильных категориях Иу", body: "Подбираем товары под целевую цену, качество, упаковку и требования рынка." },
     callout: { title: "Не нашли категорию?", body: "Отправьте фото, ссылки или спецификации. Специалист ответит с дальнейшими шагами.", cta: "Получить помощь" },
     compare: { eyebrow: "Больше, чем маркетплейс", title: "Мы делаем то, чего не делает карточка товара", body: "Проверяем поставщиков офлайн, ведем переговоры на китайском, работаем с образцами, инспекцией и консолидацией." },
     value: { eyebrow: "Дополнительная поддержка", title: "Услуги, снижающие скрытые расходы" },
     cases: { eyebrow: "Истории покупателей", title: "Надежный партнер для регулярных закупок", body: "Помогаем новым покупателям начать аккуратно, а опытным вернуть прозрачность цепочки поставок." },
-    contact: { eyebrow: "Начать закупку", title: "Расскажите YiwuGo Agent, что вам нужно", body: "Укажите категорию, рынок, бюджет и сроки. Мы подготовим практичный план.", point1: "Поиск поставщиков и сравнение цен", point2: "Образцы, инспекция и консолидация", point3: "Поддержка на EN, ES, PT, FR, JA, RU и китайском" },
+    contact: { eyebrow: "Начать закупку", title: "Расскажите YiwuBridge, что вам нужно", body: "Укажите категорию, рынок, бюджет и сроки. Мы подготовим практичный план.", point1: "Поиск поставщиков и сравнение цен", point2: "Образцы, инспекция и консолидация", point3: "Поддержка на EN, ES, PT, FR, JA, RU и китайском" },
     form: { name: "Полное имя", email: "Email", whatsapp: "WhatsApp", country: "Страна", category: "Категории", budget: "Бюджет", links: "Ссылки на товар или примеры", files: "Загрузить фото или спецификации", message: "Детали", submit: "Отправить", success: "Спасибо. Запрос готов к обработке." },
     footer: { body: "Закупки в Иу, управление поставщиками, инспекция, консолидация и экспорт.", office: "Офис в Иу", address: "No. 2, Building 22, Xingzhong Community, Chouzhou North Road, Choucheng Street, Yiwu City, Jinhua City, Zhejiang Province, China", languages: "Языки поддержки" }
   },
@@ -93,14 +93,14 @@ const translations = {
     nav: { services: "服务", sourcing: "义乌采购", supplier: "供应商匹配", logistics: "仓储物流", products: "产品", support: "支持", audit: "供应商审核", quality: "质量控制", photo: "产品拍摄", blog: "博客", cases: "案例", contact: "联系", language: "语言" },
     hero: { eyebrow: "面向全球买家的义乌采购代理", title: "从义乌和中国采购海量产品", subtitle: "一个本地团队，帮你完成找货、询价议价、验货、仓储集货和国际物流。", cta: "告诉我们你的需求", secondary: "查看产品类目" },
     stats: { suppliers: "10,000+", suppliersLabel: "认证供应商", categories: "50,000+", categoriesLabel: "可采购产品", response: "2小时", responseLabel: "工作时间响应" },
-    services: { eyebrow: "围绕义乌市场打造", title: "连接海外买家与中国供应链的实战采购代理", body: "YiwuGo Agent 为进口商、零售商、批发商和电商卖家提供在义乌的本地采购团队，从找品到出货都有人盯进度、控成本、守质量。" },
+    services: { eyebrow: "围绕义乌市场打造", title: "连接海外买家与中国供应链的实战采购代理", body: "YiwuBridge 为进口商、零售商、批发商和电商卖家提供在义乌的本地采购团队，从找品到出货都有人盯进度、控成本、守质量。" },
     products: { eyebrow: "产品类目", title: "覆盖义乌优势采购类目", body: "无论是小商品、日用百货还是自有品牌，我们都会按你的目标价、质量等级、包装和合规要求匹配供应商。" },
     callout: { title: "没有看到想采购的类目？", body: "把产品图片、链接或规格发给我们，采购专员会给你下一步建议。", cta: "获取采购帮助" },
     compare: { eyebrow: "不只是线上平台", title: "我们能做产品列表做不到的事", body: "义乌本地团队线下核厂、中文议价、跟样品、做验货，并在出口前完成多供应商集货。" },
     value: { eyebrow: "增值支持", title: "帮你降低隐藏供应链成本" },
     cases: { eyebrow: "买家案例", title: "被长期从中国采购的进口商信任", body: "我们帮助新买家稳妥起步，也帮助成熟买家重新掌握价格、生产、包装和出货的透明度。" },
-    contact: { eyebrow: "开始采购", title: "告诉 YiwuGo Agent 你想采购什么", body: "提交产品类目、目标市场、预算和时间计划，我们会整理一份可执行的采购方案。", point1: "供应商搜索与报价对比", point2: "样品、验货与仓储集货", point3: "英语、西语、葡语、法语、日语、俄语和中文支持" },
-    form: { name: "姓名", email: "邮箱", whatsapp: "WhatsApp", country: "国家/地区", category: "感兴趣类目", budget: "采购预算", links: "产品链接或参考网址", files: "上传产品图片或规格文件", message: "询盘详情", submit: "提交询盘", success: "已生成询盘草稿，YiwuGo Agent 可据此跟进。" },
+    contact: { eyebrow: "开始采购", title: "告诉 YiwuBridge 你想采购什么", body: "提交产品类目、目标市场、预算和时间计划，我们会整理一份可执行的采购方案。", point1: "供应商搜索与报价对比", point2: "样品、验货与仓储集货", point3: "英语、西语、葡语、法语、日语、俄语和中文支持" },
+    form: { name: "姓名", email: "邮箱", whatsapp: "WhatsApp", country: "国家/地区", category: "感兴趣类目", budget: "采购预算", links: "产品链接或参考网址", files: "上传产品图片或规格文件", message: "询盘详情", submit: "提交询盘", success: "已生成询盘草稿，YiwuBridge 可据此跟进。" },
     footer: { body: "为全球买家提供义乌采购、供应商管理、验货、集货和出口支持。", office: "义乌办公室", address: "中国浙江省金华市义乌市稠城街道稠州北路兴中小区22幢2号", languages: "支持语言" }
   }
 };
@@ -394,7 +394,7 @@ function renderProductShowcase(lang) {
   const contactHref = document.querySelector("#contact") ? "#contact" : "./index.html#contact";
 
   if (categoryParam) {
-    document.title = `${categoryName} Sourcing | YiwuGo Agent`;
+    document.title = `${categoryName} Sourcing | YiwuBridge`;
   }
   showcase.innerHTML = `
     <div class="showcase-summary">
