@@ -2147,31 +2147,6 @@ textarea {
   background: var(--white);
 }
 
-.license-verify {
-  grid-column: 1 / -1;
-  padding-top: 18px;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.license-verify p {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-  margin: 0;
-  color: rgba(255, 255, 255, 0.78);
-  font-size: 14px;
-}
-
-.license-verify strong {
-  color: var(--white);
-}
-
-.license-icon {
-  font-size: 18px;
-  line-height: 1;
-}
-
 .footer-disclaimer {
   grid-column: 1 / -1;
   max-width: 1080px;
