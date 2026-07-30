@@ -632,15 +632,15 @@
         </div>
         <div class="market-map-grid" aria-label="Yiwu International Trade City product district maps">
           <figure class="market-map-card">
-            <img src="./assets/yiwu-market-district-1-map.png" alt="Yiwu International Trade City District One floor map for toys, artificial flowers, jewelry, and handicrafts" loading="lazy" decoding="async" />
+            <img src="./assets/yiwu-market-district-1-map.jpg" alt="Yiwu International Trade City District One floor map for toys, artificial flowers, jewelry, and handicrafts" width="760" height="958" loading="lazy" decoding="async" />
             <figcaption>District One: toys, artificial flowers, jewelry, accessories, crafts, and factory outlets.</figcaption>
           </figure>
           <figure class="market-map-card">
-            <img src="./assets/yiwu-market-district-2-map.png" alt="Yiwu International Trade City District Two floor map for bags, hardware, electronics, clocks, watches, and foreign trade offices" loading="lazy" decoding="async" />
+            <img src="./assets/yiwu-market-district-2-map.jpg" alt="Yiwu International Trade City District Two floor map for bags, hardware, electronics, clocks, watches, and foreign trade offices" width="760" height="1015" loading="lazy" decoding="async" />
             <figcaption>District Two: bags, hardware, tools, electronics, watches, luggage, and foreign trade offices.</figcaption>
           </figure>
           <figure class="market-map-card">
-            <img src="./assets/yiwu-market-district-3-map.png" alt="Yiwu International Trade City District Three floor map for stationery, sports goods, cosmetics, accessories, and printed pictures" loading="lazy" decoding="async" />
+            <img src="./assets/yiwu-market-district-3-map.jpg" alt="Yiwu International Trade City District Three floor map for stationery, sports goods, cosmetics, accessories, and printed pictures" width="760" height="1037" loading="lazy" decoding="async" />
             <figcaption>District Three: stationery, sports goods, cosmetics, accessories, buttons, zippers, and printed products.</figcaption>
           </figure>
         </div>
@@ -1106,41 +1106,6 @@
       <span>WhatsApp</span>
     </a>
 
-    <script>
-      window.addEventListener("DOMContentLoaded", () => {
-        const sendLeadEvent = (eventName, eventParams) => {
-          if (typeof window.gtag !== "function") return;
-          window.gtag("event", eventName, {
-            event_category: "lead",
-            transport_type: "beacon",
-            ...eventParams
-          });
-        };
-
-        const leadForm = document.querySelector("#leadForm");
-        if (leadForm) {
-          leadForm.addEventListener("submit", () => {
-            const leadParams = {
-              event_label: "contact_form",
-              form_id: "leadForm"
-            };
-            sendLeadEvent("generate_lead", leadParams);
-            sendLeadEvent("qualify_lead", leadParams);
-          });
-        }
-
-        document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"]').forEach((link) => {
-          link.addEventListener("click", () => {
-            const whatsappParams = {
-              event_label: link.classList.contains("whatsapp-float") ? "floating_whatsapp" : "whatsapp_link",
-              link_url: link.href
-            };
-            sendLeadEvent("whatsapp_click", whatsappParams);
-            sendLeadEvent("close_convert_lead", whatsappParams);
-          });
-        });
-      });
-    </script>
     <script src="./script.js" defer></script>
   </body>
 </html>
