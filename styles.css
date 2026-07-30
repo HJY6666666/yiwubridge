@@ -1791,6 +1791,37 @@ textarea {
   margin-bottom: 0;
 }
 
+.market-map-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.market-map-card {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid rgba(20, 35, 34, 0.1);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 14px 34px rgba(12, 37, 35, 0.08);
+}
+
+.market-map-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  background: #fff;
+}
+
+.market-map-card figcaption {
+  padding: 14px 16px 16px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 750;
+  line-height: 1.5;
+}
+
 .real-case-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2340,12 +2371,13 @@ textarea {
   .process-grid,
   .guide-grid,
   .product-page-categories,
-  .directory-grid,
-  .solution-grid,
-  .advantage-list,
-  .real-case-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+	  .directory-grid,
+	  .solution-grid,
+	  .advantage-list,
+	  .market-map-grid,
+	  .real-case-grid {
+	    grid-template-columns: repeat(2, minmax(0, 1fr));
+	  }
 
   .product-showcase {
     grid-template-columns: 1fr;
@@ -2389,12 +2421,13 @@ textarea {
   .process-grid,
   .guide-grid,
   .product-page-categories,
-  .directory-grid,
-  .solution-grid,
-  .advantage-list,
-  .real-case-grid,
-  .form-row {
-    grid-template-columns: 1fr;
+	  .directory-grid,
+	  .solution-grid,
+	  .advantage-list,
+	  .market-map-grid,
+	  .real-case-grid,
+	  .form-row {
+	    grid-template-columns: 1fr;
   }
 
   .product-hero-card {
