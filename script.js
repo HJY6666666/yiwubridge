@@ -544,6 +544,14 @@ if (blogSearch) {
       card.hidden = Boolean(query) && !text.includes(query);
     });
   });
+
+  document.querySelectorAll("[data-blog-topic]").forEach((button) => {
+    button.addEventListener("click", () => {
+      blogSearch.value = button.getAttribute("data-blog-topic") || "";
+      blogSearch.dispatchEvent(new Event("input", { bubbles: true }));
+      blogSearch.focus();
+    });
+  });
 }
 
 setLanguage(localStorage.getItem("yiwuGoAgentLang") || "en");
