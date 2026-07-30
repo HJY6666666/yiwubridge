@@ -961,16 +961,25 @@ textarea {
 }
 
 .topic-pills a,
-.topic-pills span {
+.topic-pills span,
+.topic-pills button {
   display: inline-flex;
   align-items: center;
   min-height: 34px;
   padding: 0 12px;
+  border: 0;
   border-radius: 999px;
   background: rgba(13, 118, 110, 0.09);
   color: var(--brand-dark);
+  cursor: pointer;
+  font: inherit;
   font-size: 13px;
   font-weight: 800;
+}
+
+.topic-pills button:hover,
+.topic-pills button:focus-visible {
+  background: rgba(13, 118, 110, 0.16);
 }
 
 .blog-layout {
