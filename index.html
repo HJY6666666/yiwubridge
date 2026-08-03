@@ -807,13 +807,23 @@
           <div class="form-row">
             <label>
               <span>Email</span>
-              <input name="email" type="email" required />
+              <input name="email" type="email" autocomplete="email" required />
             </label>
             <label>
-              <span>Destination Country</span>
-              <input name="Destination Country" type="text" required />
+              <span>WhatsApp <small>(optional)</small></span>
+              <input
+                name="WhatsApp"
+                type="tel"
+                inputmode="tel"
+                autocomplete="tel"
+                placeholder="e.g. +1 202 555 0123"
+              />
             </label>
           </div>
+          <label>
+            <span>Destination Country</span>
+            <input name="Destination Country" type="text" autocomplete="country-name" required />
+          </label>
           <label>
             <span>Target Products</span>
             <input name="Target Products" type="text" placeholder="e.g. storage box, makeup mirror, kitchen tool" required />
