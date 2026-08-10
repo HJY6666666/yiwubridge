@@ -1046,6 +1046,25 @@ textarea {
   font-size: 15px;
 }
 
+.blog-empty-state {
+  grid-column: 1 / -1;
+  padding: 28px;
+  border: 1px dashed rgba(20, 35, 34, 0.22);
+  border-radius: 8px;
+  background: rgba(13, 118, 110, 0.05);
+  text-align: center;
+}
+
+.blog-empty-state h3 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.blog-empty-state p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .blog-meta {
   display: flex;
   flex-wrap: wrap;
@@ -2465,8 +2484,15 @@ textarea {
   .whatsapp-float {
     right: 14px;
     bottom: 14px;
+    justify-content: center;
+    width: 52px;
     min-height: 52px;
-    padding: 0 14px 0 12px;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  .whatsapp-float span {
+    display: none;
   }
 
   .callout {
