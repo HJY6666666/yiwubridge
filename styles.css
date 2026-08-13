@@ -2484,15 +2484,10 @@ textarea {
   .whatsapp-float {
     right: 14px;
     bottom: 14px;
-    justify-content: center;
-    width: 52px;
-    min-height: 52px;
-    padding: 0;
-    border-radius: 50%;
-  }
-
-  .whatsapp-float span {
-    display: none;
+    width: auto;
+    min-height: 58px;
+    padding: 0 18px 0 14px;
+    border-radius: 8px;
   }
 
   .callout {
