@@ -67,6 +67,16 @@ The homepage includes an About Us section with Yiwu market access, placeholder a
 
 The homepage includes a buyer resource download placeholder for future PDF lead magnets such as a Yiwu Buying Checklist, Amazon FBA Prep Standard, or Supplier Audit Questions.
 
+## High-Intent Buyer Questions
+
+Can YiwuBridge source from 1688, Taobao, Yiwugo and Weidian? Yes. Buyers can send 1688, Taobao, Yiwugo, Weidian, Alibaba, or competitor product links. YiwuBridge compares online listings with offline Yiwu market suppliers and local factories, then reports MOQ, lead time, packaging notes, and shipping options.
+
+How does YiwuBridge verify a China supplier before payment? YiwuBridge checks supplier identity, product category fit, quotation consistency, sample quality, payment beneficiary details, packaging requirements, and inspection evidence before recommending deposit or balance payment.
+
+Can buyers start with a small pilot order before bulk purchasing? Yes. Many Yiwu categories support mixed trial orders. YiwuBridge helps buyers test samples, packaging, QC standards, and real shipping cost before committing to larger bulk orders.
+
+How does YiwuBridge keep sourcing fees transparent? YiwuBridge separates product cost, service fee, inspection, local handling, and freight. The usual service fee is 3% - 5% on confirmed shipments, with no hidden supplier kickbacks or inflated shipping markups.
+
 ## Support Service Pages
 
 YiwuBridge provides supplier audit support for supplier identity checks, product capability review, MOQ and lead time confirmation, quotation comparison, and supplier risk notes before buyer payment.
