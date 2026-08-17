@@ -1955,6 +1955,47 @@ textarea {
   box-shadow: var(--shadow);
 }
 
+.rfq-promise {
+  margin: 0 0 20px;
+  padding: 18px;
+  border: 1px solid rgba(16, 89, 80, 0.18);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f7fbf9 0%, #fff9ec 100%);
+}
+
+.rfq-promise strong {
+  display: block;
+  color: var(--brand-dark);
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.rfq-promise p {
+  margin: 8px 0 12px;
+  color: #526965;
+  line-height: 1.6;
+}
+
+.rfq-promise ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.rfq-promise li {
+  padding: 9px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.78);
+  color: #29413f;
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+}
+
 .hidden-field {
   position: absolute;
   left: -9999px;
@@ -2000,6 +2041,24 @@ textarea {
   margin-top: 6px;
   border: 0;
   cursor: pointer;
+}
+
+.form-alt-contact {
+  margin: 12px 0 0;
+  color: #55706d;
+  font-size: 14px;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.form-alt-contact a {
+  color: var(--brand);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.form-alt-contact a:hover {
+  text-decoration: underline;
 }
 
 .form-status {
@@ -2445,6 +2504,7 @@ textarea {
 	  .advantage-list,
 	  .market-map-grid,
 	  .real-case-grid,
+	  .rfq-promise ul,
 	  .form-row {
 	    grid-template-columns: 1fr;
   }
