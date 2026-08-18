@@ -367,6 +367,49 @@ textarea {
   font-weight: 850;
 }
 
+.ai-conversion-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+  gap: 24px;
+  align-items: center;
+  margin-top: -34px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  border: 1px solid rgba(16, 89, 80, 0.14);
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f7fbf9 0%, #fff9ec 100%);
+  box-shadow: 0 18px 45px rgba(12, 37, 35, 0.08);
+}
+
+.ai-conversion-panel h2,
+.ai-conversion-panel p {
+  margin: 0;
+}
+
+.ai-conversion-panel h2 {
+  max-width: 760px;
+  color: var(--ink);
+  font-size: clamp(28px, 4vw, 46px);
+  line-height: 1.05;
+}
+
+.ai-conversion-panel p:not(.eyebrow) {
+  max-width: 820px;
+  margin-top: 14px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.ai-conversion-actions {
+  display: grid;
+  gap: 12px;
+}
+
+.ai-conversion-actions .button {
+  width: 100%;
+  justify-content: center;
+}
+
 .section {
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
@@ -2412,6 +2455,7 @@ textarea {
   .section-intro,
   .comparison,
   .contact-section,
+  .ai-conversion-panel,
   .product-page-hero,
   .product-advantage-inner,
   .blog-toolbar,
