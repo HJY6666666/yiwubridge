@@ -499,6 +499,20 @@ function trackAdEvent(eventName, eventParams = {}) {
 }
 
 if (leadForm) {
+  const params = new URLSearchParams(window.location.search);
+  const sourceFields = {
+    leadPageUrl: window.location.href,
+    leadReferrer: document.referrer || "Direct / no referrer",
+    leadUtmSource: params.get("utm_source") || "",
+    leadUtmMedium: params.get("utm_medium") || "",
+    leadUtmCampaign: params.get("utm_campaign") || ""
+  };
+
+  Object.entries(sourceFields).forEach(([id, value]) => {
+    const field = document.getElementById(id);
+    if (field) field.value = value;
+  });
+
   leadForm.addEventListener("submit", () => {
     const leadEventParams = {
       event_label: "contact_form",
@@ -537,12 +551,21 @@ document.querySelectorAll("[data-track-intent]").forEach((link) => {
 const blogSearch = document.querySelector("#blogSearch");
 if (blogSearch) {
   const blogCards = Array.from(document.querySelectorAll(".blog-list .blog-card"));
+  const blogEmptyState = document.querySelector("#blogEmptyState");
   blogSearch.addEventListener("input", () => {
     const query = blogSearch.value.trim().toLowerCase();
+    let visibleCount = 0;
     blogCards.forEach((card) => {
       const text = card.textContent.toLowerCase();
-      card.hidden = Boolean(query) && !text.includes(query);
+      const isHidden = Boolean(query) && !text.includes(query);
+      card.hidden = isHidden;
+      if (!isHidden) {
+        visibleCount += 1;
+      }
     });
+    if (blogEmptyState) {
+      blogEmptyState.hidden = !query || visibleCount > 0;
+    }
   });
 
   document.querySelectorAll("[data-blog-topic]").forEach((button) => {
