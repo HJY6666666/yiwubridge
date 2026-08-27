@@ -102,7 +102,7 @@ Trust and risk control content explains supplier and quote transparency, QC fail
 
 The homepage includes an About Us section with Yiwu market access and practical buyer trust notes. Business registration details can be shared during buyer due diligence before confirmed orders. Product categories are displayed as one non-duplicated responsive grid on the homepage to reduce repeated text and improve buyer scanning. The contact form fields are Name, Company, Email, WhatsApp, Target Products, Order Qty, Destination Country, and Message.
 
-The homepage includes a buyer resource download placeholder for future PDF lead magnets such as a Yiwu Buying Checklist, Amazon FBA Prep Standard, or Supplier Audit Questions.
+The homepage buyer resources section invites importers to request a Yiwu sourcing checklist covering product specs, MOQ questions, supplier verification, packing photos, carton labels, QC timing, and shipping documents before deposit.
 
 ## High-Intent Buyer Questions
 
