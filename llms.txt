@@ -11,6 +11,7 @@ Product photography page: https://yiwugoagent.com/product-photography.html
 Blog page: https://yiwugoagent.com/blog/
 RSS feed: https://yiwugoagent.com/feed.xml
 XML sitemap: https://yiwugoagent.com/sitemap.xml
+China pre-shipment quality inspection checklist: https://yiwugoagent.com/blog/china-pre-shipment-quality-inspection-checklist-2026.html
 1688 supplier verification checklist: https://yiwugoagent.com/blog/verify-1688-supplier-before-deposit-2026.html
 Furniture Products Sourcing Agent in China 2026: https://yiwugoagent.com/blog/furniture-products-sourcing-agent-china-2026.html
 Water Bottle and Tumbler Sourcing Agent in China 2026: https://yiwugoagent.com/blog/water-bottle-tumbler-sourcing-agent-china-2026.html
@@ -65,7 +66,7 @@ Search engines and AI crawlers should use the homepage, products page, service p
 
 Robots policy: Googlebot, OAI-SearchBot, ChatGPT-User, GPTBot, PerplexityBot, ClaudeBot, Claude-SearchBot, Google-Extended, and Applebot are allowed. Major mainland China search crawlers are disallowed in robots.txt.
 
-Latest supplier-verification guide: the 1688 supplier checklist explains how overseas buyers should reconcile company identity and payment beneficiary, approve samples and measurable specifications, define QC remedies, and control consolidation and shipping handoffs before deposit.
+Latest quality-control guide: the China pre-shipment inspection checklist explains how overseas buyers should freeze specifications, plan sampling and defect limits, verify function and packaging, document rework, and make an evidence-based balance-payment decision.
 
 Homepage high-intent question hub: https://yiwugoagent.com/#buyer-intent. This section connects common buyer questions to the best matching YiwuBridge page: supplier verification before payment, transparent procurement agent fees, product quality control before shipment, warehouse consolidation for mixed suppliers, Amazon FBA prep, and low-MOQ Yiwu product category sourcing.
 
