@@ -1,3 +1,11 @@
+const WHATSAPP_CONFIG = {
+  phoneNumber: "8618626859896",
+  defaultMessage: "Hello YiwuBridge, I want help with Yiwu sourcing.",
+  inlineDefaultMessage: "Hello YiwuBridge, I read your sourcing guide and want help with my product list.",
+  floatingMessage: "Hello YiwuBridge, I want help with Yiwu sourcing.",
+  replyLabel: "Online | Reply within 5 mins"
+};
+
 const translations = {
   en: {
     nav: { services: "Services", sourcing: "Yiwu sourcing", supplier: "Supplier matching", logistics: "Warehouse and logistics", products: "Products", support: "Support", audit: "Supplier audit", quality: "Quality control", photo: "Product photography", blog: "Blog", cases: "Cases", contact: "Contact", language: "Language" },
@@ -527,15 +535,66 @@ if (leadForm) {
   });
 }
 
-document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp"]').forEach((link) => {
-  link.addEventListener("click", () => {
-    const whatsappEventParams = {
-      event_label: link.classList.contains("whatsapp-float") ? "floating_whatsapp" : "whatsapp_link",
-      link_url: link.href
-    };
-    trackAdEvent("whatsapp_click", whatsappEventParams);
-    trackAdEvent("close_convert_lead", whatsappEventParams);
+function getWhatsappCtaPosition(link) {
+  if (link.dataset.ctaPosition) return link.dataset.ctaPosition;
+  if (link.classList.contains("whatsapp-float")) return "floating_button";
+  if (link.closest(".article-contact-strip, .article-cta")) return "inline_card";
+  if (link.closest(".footer")) return "footer";
+  return "content_link";
+}
+
+function getWhatsappPrefilledText(link) {
+  if (link.dataset.whatsappMessage) return link.dataset.whatsappMessage;
+  try {
+    const url = new URL(link.href);
+    return decodeURIComponent(url.searchParams.get("text") || WHATSAPP_CONFIG.defaultMessage);
+  } catch (error) {
+    return WHATSAPP_CONFIG.defaultMessage;
+  }
+}
+
+function prepareWhatsappLink(link) {
+  const ctaPosition = getWhatsappCtaPosition(link);
+  let prefilledText = getWhatsappPrefilledText(link);
+
+  if (link.classList.contains("whatsapp-float")) {
+    link.href = `https://wa.me/${WHATSAPP_CONFIG.phoneNumber}?text=${encodeURIComponent(WHATSAPP_CONFIG.floatingMessage)}`;
+    prefilledText = WHATSAPP_CONFIG.floatingMessage;
+    const label = link.querySelector("span");
+    if (label) label.textContent = WHATSAPP_CONFIG.replyLabel;
+  }
+
+  link.dataset.ctaPosition = ctaPosition;
+  link.dataset.whatsappMessage = prefilledText;
+}
+
+document.querySelectorAll('a[href*="wa.me"], a[href*="api.whatsapp.com"]').forEach(prepareWhatsappLink);
+
+document.addEventListener("click", (event) => {
+  const link = event.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]');
+  if (!link) return;
+
+  prepareWhatsappLink(link);
+
+  const ctaPosition = getWhatsappCtaPosition(link);
+  const prefilledText = getWhatsappPrefilledText(link);
+  const whatsappEventParams = {
+    event_category: "lead",
+    event_label: ctaPosition,
+    page_path: window.location.pathname,
+    cta_position: ctaPosition,
+    prefilled_text: prefilledText,
+    link_url: link.href
+  };
+
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: "click_whatsapp",
+    ...whatsappEventParams
   });
+
+  trackAdEvent("click_whatsapp", whatsappEventParams);
+  trackAdEvent("close_convert_lead", whatsappEventParams);
 });
 
 document.querySelectorAll("[data-track-intent]").forEach((link) => {

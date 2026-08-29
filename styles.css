@@ -1350,6 +1350,20 @@ textarea {
   justify-content: flex-end;
 }
 
+.article-contact-strip a[href*="wa.me"],
+.article-contact-strip a[href*="api.whatsapp.com"] {
+  border-color: #25d366;
+  background: #25d366;
+  color: #ffffff;
+  box-shadow: 0 12px 26px rgba(18, 140, 86, 0.26);
+}
+
+.article-contact-strip a[href*="wa.me"]:hover,
+.article-contact-strip a[href*="api.whatsapp.com"]:hover {
+  background: #1fbd5c;
+  color: #ffffff;
+}
+
 .article-contact-note {
   margin-top: 10px !important;
   font-size: 14px !important;
@@ -2450,24 +2464,79 @@ textarea {
   z-index: 30;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  min-height: 58px;
-  padding: 0 18px 0 14px;
-  border-radius: 8px;
-  background: #25d366;
-  color: #ffffff;
+  gap: 12px;
+  min-height: 64px;
+  padding: 8px 16px 8px 8px;
+  border: 1px solid rgba(37, 211, 102, 0.24);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.96);
+  color: var(--ink);
   font-weight: 900;
-  box-shadow: 0 14px 34px rgba(18, 140, 86, 0.34);
+  box-shadow: 0 18px 44px rgba(18, 140, 86, 0.28);
+  backdrop-filter: blur(10px);
+}
+
+.whatsapp-float::before {
+  content: "";
+  position: absolute;
+  inset: 6px auto auto 6px;
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  background: rgba(37, 211, 102, 0.32);
+  animation: whatsappPulse 2.4s ease-out infinite;
+  pointer-events: none;
 }
 
 .whatsapp-float svg {
-  width: 30px;
-  height: 30px;
+  position: relative;
+  z-index: 1;
+  width: 52px;
+  height: 52px;
+  padding: 11px;
+  border-radius: 999px;
+  background: #25d366;
+  color: #ffffff;
   fill: none;
   stroke: currentColor;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+.whatsapp-float span {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--brand-dark);
+  font-size: 13px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.whatsapp-float span::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: #25d366;
+  box-shadow: 0 0 0 4px rgba(37, 211, 102, 0.18);
+}
+
+@keyframes whatsappPulse {
+  0% {
+    opacity: 0.62;
+    transform: scale(0.9);
+  }
+  70% {
+    opacity: 0;
+    transform: scale(1.45);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.45);
+  }
 }
 
 .thank-you-page {
@@ -2695,9 +2764,25 @@ textarea {
     right: 14px;
     bottom: 14px;
     width: auto;
-    min-height: 58px;
-    padding: 0 18px 0 14px;
-    border-radius: 8px;
+    min-height: 62px;
+    padding: 7px 12px 7px 7px;
+    border-radius: 999px;
+  }
+
+  .whatsapp-float::before {
+    inset: 5px auto auto 5px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .whatsapp-float svg {
+    width: 52px;
+    height: 52px;
+  }
+
+  .whatsapp-float span {
+    max-width: 86px;
+    white-space: normal;
   }
 
   .callout {
