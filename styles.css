@@ -2802,8 +2802,8 @@ textarea {
 /* Homepage layout refinement: clearer first screen, tighter navigation, and
    more usable mobile paths while preserving all existing buyer content. */
 .hero-media {
-  background-image: url("./assets/yiwu-trade-city-exterior.jpg");
-  background-position: center 42%;
+  background-image: url("https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1800&q=80");
+  background-position: center;
 }
 
 @media (min-width: 981px) {
