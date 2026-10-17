@@ -505,7 +505,7 @@ function trackAdEvent(eventName, eventParams = {}) {
   });
 }
 
-const leadForms = document.querySelectorAll("#leadForm, [data-lead-magnet-form]");
+const leadForms = document.querySelectorAll("#rfq-form, [data-lead-magnet-form]");
 if (leadForms.length) {
   const params = new URLSearchParams(window.location.search);
   const sourceFields = {
