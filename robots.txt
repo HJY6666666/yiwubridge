@@ -9,7 +9,7 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-# Permit answer-engine discovery where a user explicitly requests the site.
+# Allow AI Search & Retrieval Bots
 User-agent: OAI-SearchBot
 Allow: /
 
@@ -22,21 +22,21 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-# Do not permit AI model training or non-search grounding crawlers.
+# Restrict other non-search crawlers that are not part of the AI discovery policy.
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 User-agent: ClaudeBot
-Disallow: /
+Allow: /
 
 User-agent: Google-Extended
-Disallow: /
+Allow: /
 
 User-agent: CCBot
 Disallow: /
 
 User-agent: anthropic-ai
-Disallow: /
+Allow: /
 
 User-agent: Cohere-ai
 Disallow: /
@@ -104,7 +104,7 @@ User-agent: ShenmaSpider
 Disallow: /
 
 User-agent: Bytespider
-Disallow: /
+Allow: /
 
 User-agent: PetalBot
 Disallow: /
