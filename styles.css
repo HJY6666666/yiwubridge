@@ -2992,3 +2992,25 @@ textarea {
     margin-top: 16px;
   }
 }
+
+.ai-brief-list {
+  display: grid;
+  gap: 8px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--ink);
+  font-weight: 750;
+}
+
+.ai-brief-list li {
+  position: relative;
+  padding-left: 22px;
+}
+
+.ai-brief-list li::before {
+  position: absolute;
+  left: 0;
+  content: "✓";
+  color: var(--brand);
+}

@@ -4,6 +4,15 @@ YiwuBridge is a Yiwu sourcing agent and China buying agent based in Yiwu, Zhejia
 
 Website: https://yiwugoagent.com/
 Canonical homepage: https://yiwugoagent.com/
+
+## Fast buyer inquiry route
+
+For a supplier quote, buyers should send a product link, photo, drawing, or specification together with target quantity, destination country, target price, packaging needs, and deadline. YiwuBridge can then compare supplier options and outline practical next steps for MOQ, samples, quality control, consolidation, and shipping.
+
+Start an RFQ: https://yiwugoagent.com/#contact
+WhatsApp: https://wa.me/8618626859896
+Expected first reply: within 2 business hours when available; supplier checks and practical quotations are normally prepared within 24 hours when supplier information is clear.
+
 Product page: https://yiwugoagent.com/products.html
 Supplier audit page: https://yiwugoagent.com/supplier-audit.html
 Quality control page: https://yiwugoagent.com/quality-control.html

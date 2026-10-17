@@ -11,9 +11,9 @@ const translations = {
     nav: { services: "Services", sourcing: "Yiwu sourcing", supplier: "Supplier matching", logistics: "Warehouse and logistics", products: "Products", support: "Support", audit: "Supplier audit", quality: "Quality control", photo: "Product photography", blog: "Blog", cases: "Cases", contact: "Contact", language: "Language" },
     hero: {
       eyebrow: "Yiwu sourcing agent for global buyers",
-      title: "Source millions of products from Yiwu and China",
-      subtitle: "One team for supplier search, price negotiation, quality control, warehouse consolidation, and international shipping.",
-      cta: "Tell us your needs",
+      title: "Yiwu sourcing agent for supplier quotes, QC and shipping",
+      subtitle: "Send a product link, photo or RFQ. Our Yiwu team compares suppliers, checks quality, consolidates orders and coordinates international shipping.",
+      cta: "Get a free sourcing quote",
       secondary: "Explore categories"
     },
     stats: { suppliers: "10,000+", suppliersLabel: "Verified suppliers", categories: "50,000+", categoriesLabel: "Product options", response: "2h", responseLabel: "Business-hour reply" },
