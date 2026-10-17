@@ -282,6 +282,42 @@ textarea {
   margin-top: 32px;
 }
 
+.hero-whatsapp {
+  gap: 9px;
+  border-color: #25d366;
+  background: #25d366;
+  color: #ffffff;
+  box-shadow: 0 12px 26px rgba(18, 140, 86, 0.32);
+}
+
+.hero-whatsapp:hover {
+  background: #1fbd5c;
+  color: #ffffff;
+}
+
+.hero-whatsapp svg {
+  width: 21px;
+  height: 21px;
+  fill: currentColor;
+}
+
+.hero-rfq {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hero-cta-trust {
+  max-width: 860px !important;
+  margin-top: 16px !important;
+  color: rgba(255, 255, 255, 0.78) !important;
+  font-size: 14px !important;
+  font-weight: 700;
+}
+
+.hero-cta-trust span {
+  padding-inline: 5px;
+  color: var(--accent);
+}
+
 .quick-paths {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1369,6 +1405,33 @@ textarea {
   font-size: 14px !important;
   font-weight: 800;
   color: var(--brand-dark) !important;
+}
+
+.lead-magnet {
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.68fr);
+}
+
+.lead-magnet-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.lead-magnet-form input {
+  min-width: 0;
+  min-height: 48px;
+  padding: 0 13px;
+}
+
+.lead-magnet-form .button {
+  white-space: nowrap;
+}
+
+.lead-magnet-note {
+  grid-column: 1 / -1;
+  margin: 0 !important;
+  font-size: 12px !important;
 }
 
 .geo-faq {
@@ -2671,6 +2734,10 @@ textarea {
     justify-content: flex-start;
   }
 
+  .lead-magnet-form {
+    grid-template-columns: 1fr;
+  }
+
   .blog-sidebar,
   .article-toc {
     position: static;
@@ -2958,10 +3025,6 @@ textarea {
   .hero-actions .button {
     flex: 1 1 calc(50% - 6px);
     padding-inline: 14px;
-  }
-
-  .hero-actions .button:last-child {
-    display: none;
   }
 
   .quick-paths {

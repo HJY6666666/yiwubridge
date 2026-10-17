@@ -496,7 +496,6 @@ if (revealItems.length) {
   }
 }
 
-const leadForm = document.querySelector("#leadForm");
 function trackAdEvent(eventName, eventParams = {}) {
   if (typeof window.gtag !== "function") return;
   window.gtag("event", eventName, {
@@ -506,7 +505,8 @@ function trackAdEvent(eventName, eventParams = {}) {
   });
 }
 
-if (leadForm) {
+const leadForms = document.querySelectorAll("#leadForm, [data-lead-magnet-form]");
+if (leadForms.length) {
   const params = new URLSearchParams(window.location.search);
   const sourceFields = {
     leadPageUrl: window.location.href,
@@ -516,22 +516,27 @@ if (leadForm) {
     leadUtmCampaign: params.get("utm_campaign") || ""
   };
 
-  Object.entries(sourceFields).forEach(([id, value]) => {
-    const field = document.getElementById(id);
-    if (field) field.value = value;
-  });
+  leadForms.forEach((form) => {
+    Object.entries(sourceFields).forEach(([id, value]) => {
+      const field = form.querySelector(`[data-lead-context="${id}"]`) || document.getElementById(id);
+      if (field) field.value = value;
+    });
 
-  leadForm.addEventListener("submit", () => {
+    form.addEventListener("submit", () => {
+      const isLeadMagnet = form.hasAttribute("data-lead-magnet-form");
     const leadEventParams = {
-      event_label: "contact_form",
-      form_id: "leadForm"
+        event_label: isLeadMagnet ? "supplier_qc_checklist" : "contact_form",
+        form_id: form.id || "lead_magnet_form"
     };
     trackAdEvent("generate_lead", leadEventParams);
     trackAdEvent("qualify_lead", leadEventParams);
-    const formStatus = document.querySelector("#formStatus");
-    if (formStatus) {
-      formStatus.textContent = t(languageSelect ? languageSelect.value : document.documentElement.lang, "form.success");
-    }
+      const formStatus = form.querySelector(".form-status") || document.querySelector("#formStatus");
+      if (formStatus) {
+        formStatus.textContent = isLeadMagnet
+          ? "Thanks — your checklist download is opening."
+          : t(languageSelect ? languageSelect.value : document.documentElement.lang, "form.success");
+      }
+    });
   });
 }
 
