@@ -2619,6 +2619,64 @@ textarea {
   box-shadow: 0 0 0 4px rgba(37, 211, 102, 0.18);
 }
 
+.mobile-sticky-bar {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .homepage {
+    padding-bottom: 78px;
+  }
+
+  .homepage .whatsapp-float {
+    display: none;
+  }
+
+  .mobile-sticky-bar {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 30;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    border-top: 1px solid rgba(20, 35, 34, 0.1);
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 -7px 22px rgba(8, 38, 36, 0.12);
+    backdrop-filter: blur(12px);
+  }
+
+  .mobile-sticky-bar a {
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  .mobile-sticky-whatsapp {
+    background: #25d366;
+    color: #ffffff;
+  }
+
+  .mobile-sticky-whatsapp svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+
+  .mobile-sticky-rfq {
+    border: 1px solid var(--brand);
+    background: var(--brand);
+    color: #ffffff;
+  }
+}
+
 @keyframes whatsappPulse {
   0% {
     opacity: 0.62;
