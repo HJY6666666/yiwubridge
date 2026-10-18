@@ -32,6 +32,13 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+User-agent: GoogleOther
+Allow: /
+
+User-agent: GoogleOther-Image
+Allow: /
+
+
 User-agent: CCBot
 Disallow: /
 

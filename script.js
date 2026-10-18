@@ -616,6 +616,8 @@ const blogSearch = document.querySelector("#blogSearch");
 if (blogSearch) {
   const blogCards = Array.from(document.querySelectorAll(".blog-list .blog-card"));
   const blogEmptyState = document.querySelector("#blogEmptyState");
+  const blogQuery = new URLSearchParams(window.location.search).get("q");
+  if (blogQuery) blogSearch.value = blogQuery;
   blogSearch.addEventListener("input", () => {
     const query = blogSearch.value.trim().toLowerCase();
     let visibleCount = 0;
@@ -631,6 +633,8 @@ if (blogSearch) {
       blogEmptyState.hidden = !query || visibleCount > 0;
     }
   });
+
+  if (blogQuery) blogSearch.dispatchEvent(new Event("input", { bubbles: true }));
 
   document.querySelectorAll("[data-blog-topic]").forEach((button) => {
     button.addEventListener("click", () => {
