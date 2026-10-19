@@ -1,0 +1,7 @@
+{
+  "name": "yiwubridge-static-site",
+  "private": true,
+  "scripts": {
+    "indexnow": "node scripts/submit-indexnow.js"
+  }
+}
