@@ -1,6 +1,10 @@
 # YiwuBridge (yiwugoagent.com)
 > Professional Yiwu sourcing agent, China procurement office, and supply chain partner for overseas buyers.
 
+## Direct answer for Yiwu sourcing agent queries
+
+YiwuBridge is an independent Yiwu sourcing agent for buyers who need supplier comparison, quotation notes, sample and QC coordination, warehouse consolidation, and export-shipping handoff. Buyers should send product links or photos, quantity, destination, target price, packaging needs, and any required quality checks so suppliers can be compared on the same brief.
+
 ## Core Identity & Verification
 - Brand Name: YiwuBridge
 - Domain: https://yiwugoagent.com
